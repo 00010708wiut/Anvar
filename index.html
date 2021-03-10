@@ -1,857 +1,1404 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>savol-javop</title>
-
-
-    <script>
-
-
-        var savolJavob = [
-            {
-                savol: "Falsafaning predmeti ",
-                javob: "Borliqning eng muhim hususiyatlari"
-            },
-            {
-                savol: "Falsafiy masalalar quyidagi shakllarda namoyon bo‘ladi",
-                javob: "ilmiy , nazariy"
-            },
-            {
-                savol: "“Filosofiya” atamasini ilk bor qo‘llagan mutafakkir ",
-                javob: "Abu Nasr Farobiy"
-            },
-            {
-                savol: "Donishmandlik nima",
-                javob: "O`qimishlilik , bilimlilik , donolik"
-            },
-            {
-                savol: "“Filosofiya” atamasining ma’nosi  ",
-                javob: "donolikni sevmoq"
-            },
-            {
-                savol: "Aflotunning falsafiy qarashlari",
-                javob: "G`oyalar va soyalar dunyosi"
-            },
-            {
-                savol: "Arastu fikricha mavjudlik tamoyillari qaysilar",
-                javob: "Shakl ,materiya ,haqiqat va maqsad"
-            },
-            {
-                savol: "Hozirgi zamon falsafiy qarashlarida falsafaning bosh masalasi",
-                javob: " Antropologiya"
-            },
-            {
-                savol: "Dunyoqarashning tarixiy shakllari",
-                javob: "Mifalogik , Diniy , Falsafiy , ilmiy"
-            },
-            {
-                savol: "Qadimgi Yunonistonda ilk falsafiy qarashlar qachon paydo bo‘lgan",
-                javob: "6-asrda"
-             },// 10-savol 
-            {
-                savol: "Isbotlash usulini astronomiya faniga kiritgan, yulduzlar harakatining tasnifini bergan olimni aniqlang",
-                javob: "Al Farg`oniy"
-            },
-            {
-                savol: "Markaziy Osiyo mutafakkirlaridan kimni “Sharq Arastusi” deb atashgan",
-                javob: "Abu Nasr Farobiy"
-            },
-            {
-                savol: "“Olamiy ruh”, “olamiy aql”, “mutlaq ruh”, “mutlaq g‘oya”larni kim asoslab berdi",
-                javob: "Gegil"
-            },
-            {
-                savol: "Sharq arastuchilik g‘oyasini targ‘ib qilgan faylasuf",
-                javob: " Al Kindi"
-            },
-            {
-                savol: "“Dil ba yor-u, dast ba-kоr” keltirilgan fikr kimning qalamiga mansub ",
-                javob: "Baxouddin Naqshbandiy"
-            },
-            {
-                savol: "Markaziy Osiyo mutafakkirlaridan qaysi faylasuf butun mavjudоtni sabab va oqibat nuqtai nazardan olti darajaga bo‘lgan",
-                javob: " Farobiy"
-            },
-            {
-                savol: "Markaziy Оsiyo falsafiy ta’limоtining asоschilarini aniqlang ",
-                javob: "Farobiy ,Xorazmiy , Umar Xayyom , Ibn Sino"
-            },
-            {
-                savol: "Qaysi kitobda mintaqamizning dastlabki falsafiy qarashlari berilgan",
-                javob: "Avesto"
-            },
-            {
-                savol: "Falsafaning predmeti ",
-                javob: "Borliqning eng muhim hususiyatlari"
-            },
-            {
-                savol: "“Kalila va Dimna” ning muallifi kim",
-                javob: "Muallifi nomalum"
-            },
-            {
-                savol: "Ilk falsafiy qarashlar qayerda paydo bo‘lgan ",
-                javob: "Borliqning eng muhim hususiyatlari"
-            },
-            {
-                savol: "Falsafiy masalalar quyidagi shakllarda namoyon bo‘ladi",
-                javob: "Bobil (yunonistonda)"
-            },//20-savol
-            {
-                savol: "Arastu fikricha mavjudlik tamoyillari qaysilar ",
-                javob: "Shakl , Materiya , Maqsad"
-            },
-            {
-                savol: "Sxolastikaning asosiy falsafiy ta’limoti bu",
-                javob: "universiallik"
-            },
-            {
-                savol: "Realizm ta’limoti bo‘yicha ",
-                javob: " Umumiy tushunchalar aniq mavjudlikni tashkil etadi"
-            },
-            {
-                savol: "Nominalizm ta’limoti bo‘yicha ",
-                javob: "umumiy tushunchani faqat ayrim narsalarning deb hisoblovchi talimot"
-            },
-            {
-                savol: "Yangi davr g‘arbiy yevropa falsafasida empirizm namoyondasini ko‘rsating",
-                javob: "Beker"
-            },
-            {
-                savol: "Yangi davr faylasuflaridan qaysi mutafakkir ratsionalizm tarafdori bo‘lgan ",
-                javob: "Dekart"
-            },
-            {
-                savol: "“Narsa o‘zida” ta’limotining asoschisi bu",
-                javob: "Kand"
-            },
-            {
-                savol: "“Mutloq g‘oya” ta’limoti kimga tegishli ",
-                javob: "Gegil"
-            },
-            {
-                savol: "Pozitivizm ta’limotining asoschisi ",
-                javob: "O. Kont"
-            },
-            {
-                savol: "XX asr falsafasida inson mavjudligini e’tirof etuvchi ta’limot ",
-                javob: "Ekzis tentsializm"
-            }, // 30-savol
-            {
-                savol: "Falsafaning borliq haqidagi ta’limotini o‘rganuvchi bo‘limi",
-                javob: "Antalogiya"
-            },
-            {
-                savol: "Ob’ektiv reallikni aks ettiruvchi falsafiy kategoriya bu",
-                javob: "Materiya"
-            },
-            {
-                savol: "Narsalarning birlamchi, ichki mohiyatini aniqlang  ",
-                javob: "Subsitansiya"
-            },
-            {
-                savol: "Har qanday o‘zgarish bu ",
-                javob: "Harakat"
-            },
-            {
-                savol: " Olamdagi narsalarning o‘zaro joylashish vaziyati",
-                javob: "Fazo"
-            },
-            {
-                savol: "Jarayonlarning davomiyligini, hodisalarning ketma-ketligi tartibini ifodalaydi ",
-                javob: "Vaqt"
-            },
-            {
-                savol: "Bоrliq shakllari to‘g‘ri keltirilgan qatorni ko‘rsating",
-                javob: "Jarayonlar , Inson , Ijtimoiy va Manaviy  borliq"
-            },
-            {
-                savol: "Dunyoning asosini yakka narsalar tashkil qiladi deb hisoblaydigan falsafiy oqim ",
-                javob: "Monomizm"
-            },
-            {
-                savol: "Olamning asosida ikkita ya’ni, modda va materiya bilan birga, ruh va g‘oya yotadi deb hisoblaydigan falsafiy oqim",
-                javob: "Dualizm"
-            },
-            {
-                savol: "Materiyaning atributlari ",
-                javob: "Harakat , Fazo va Vaqt"
-            }, // 40-savol
-            {
-                savol: "In’ikosning oliy shaklini ko‘rsating",
-                javob: "ong"
-            },
-            {
-                savol: "Bilimlarimizning ob’ektiv olamga adekvat (aynan mos) kelishi ",
-                javob: "Haqiqat"
-            },
-            {
-                savol: "Ijtimoiy-tarixiy amaliyot tasdig‘i va mantiqiy xulosalarga asoslangan bilish jarayoni natijasi",
-                javob: "Bilim"
-            },
-            {
-                savol: "Inson hayotiy faoliyati barcha shakllarining negizi bu ",
-                javob: "Amaliyot"
-            },
-            {
-                savol: "Kutilgan natijaga erishishga imkon yaratuvchi aqliy va amaliy qoidalar uyg‘unligi ",
-                javob: "Usul"
-            },
-            {
-                savol: "Bilim olish yo‘llarini o‘rgatuvchi, bilish usullari va  faoliyati ",
-                javob: "Uslubiyat"
-            },
-            {
-                savol: "Olamni anglash jarayonidagi yuzaga keladigan har qanday to‘siqlarni yengib o‘tishga bo‘lgan qobiliyat bu",
-                javob: "Iroda"
-            },
-            {
-                savol: "Gnoseologiya bu",
-                javob: "Bilish nazariyasi"
-            },
-            {
-                savol: "Epistemologiya bu",
-                javob: "Ilmiy bilish"
-            },
-            {
-                savol: "Borliqdagi predmet va hodisalar haqidagi to‘liq, aniq, mukammal bilimlar ",
-                javob: "Absalyut haqiqat"
-            },// 50-savol
-            {
-                savol: "Tabiat, jamiyat va inson tafakkuri taraqqiyoti haqidagi ta’imot",
-                javob: "Dialiktika"
-            },
-            {
-                savol: "Olamdagi narsa va hodisalarning muhim, zaruriy, umumiy va takrorlanuvchi bog‘lanishlarning ifodalanishi bu ",
-                javob: "Qonun"
-            },
-            {
-                savol: "Muayyan sistemaning muayyan vaqt va fazodagi yaxlit orqaga qaytmaydigan ilgarilanma yo‘nalishga ega bo‘lgan miqdoriy va sifatiy o‘zgarishi",
-                javob: "Rivojlanish"
-            },
-            {
-                savol: "Narsa va hodisalarga nisbiy barqarorlik bag‘ishlaydigan, ularning ichki muayyanligini ta’minlaydigan, bir narsa hodisani ikkinchi narsa hodisadan farq qildiradigan muhim belgi bu",
-                javob: "Sifat"
-            },
-            {
-                savol: "Narsa va hodisalardagi son, hajm, daraja kabi tomonlarning muayyanligi bu",
-                javob: "Miqdor"
-            },
-            {
-                savol: "Falsafaning predmeti ",
-                javob: "Borliqning eng muhim hususiyatlari"
-            },
-            {
-                savol: "Narsa va hodisalarning miqdor va sifat birligini qamrab oluvchi chegara bu",
-                javob: "Miyor"
-            },
-            {
-                savol: "Miqdor o‘zgarishlaridan sifat o‘zgarishlariga o‘tish jarayoni bu ",
-                javob: "Borliqning eng muhim hususiyatlari"
-            },
-            {
-                savol: "Falsafiy masalalar quyidagi shakllarda namoyon bo‘ladi",
-                javob: "Sakrash"
-            },
-            {
-                savol: "Eskini yangi bilan almashinishi bu ",
-                javob: "(Sakrash) Inkor"
-            },
-            {
-                savol: "Tabiat, jamiyat va tafakkur taraqqiyotining umumiy qonuniyatlari",
-                javob: "Dialiktika"
-            },
-            {
-                savol: "Har qanday o‘zgarish bu ",
-                javob: "Harakat( almashadi)"
-            }, // 60-savol
-            {
-                savol: "Narsa, voqea-hodisalarning bir-birini taqozo etuvchi va shu bilan birga bir-birini inkor etuvchi tomonlari, kuchlarining o‘zaro munosabatini bildiruvchi qonun",
-                javob: "Qarama qarshiliklar va kurash qonuni"
-            },
-            {
-                savol: "Umumiy bog‘lanish va aloqadorlik munosabatlarini ifodalovchi tushuncha ",
-                javob: "Falsafiy katigoriyalar"
-            },
-            {
-                savol: "Ijtimoiy tabiiy munosabatlarning keskinlashuvi natijasida kelib chiqayotgan va butun dunyoga taalluqli muammolar",
-                javob: "Global muammolar"
-            },
-            {
-                savol: "Dunyoning alohida qit’alarida, yirik ijtimoiy-iqtisodiy mintaqalarida paydo bo‘ladigan muammolar ",
-                javob: "Kontinintal"
-            },
-            {
-                savol: "Global muammolarning ko‘rinishlari qanday",
-                javob: "Hamma javob to`g`ri"
-            },
-            {
-                savol: "Rim klubi bu nima ",
-                javob: "Global muammolarni hal etish uchun yig`iladigan olimlar"
-            },
-            {
-                savol: "Hozirgi zamon sivilizatsiyasi inqirozini nimalar keltirib chiqargan",
-                javob: "Jamiyat taraqqiyoti uchun puxta o`ylangan struktura yuqligi"
-            },
-            {
-                savol: "Aholi sonini keskin o‘sish darajasi muammosini birinchilardan ko‘rsatgan bu",
-                javob: "Tomas Maltus"
-            },
-            {
-                savol: "Qaysi muammоni umumbashariy deyish mumkin",
-                javob: "Insoniyatni halokatga maxkum etuvchi muammo"
-            },
-            {
-                savol: "Insoniyat kelajagi va umumbashariy muammolar haqidagi ta’limot ",
-                javob: "Futurologiya"
-            }, // 70-savol
-            {
-                savol: "Falsafaning insonning kelib chiqishi muammolarini o‘rganadigan sohasi qanday ataladi",
-                javob: "Antrapologiya"
-            },
-            {
-                savol: "Individning o‘ziga xos xususiyati ",
-                javob: "Individuallik"
-            },
-            {
-                savol: "O‘zida ijtimoiy  sifatlarni, hamda yuksak darajadagi ma’naviy rivojlanish bosqichlarini ifoda etadigan inson ",
-                javob: "Shaxs"
-            },
-            {
-                savol: "Tabiat va jamiyatning o‘zaro aloqadorligini ifodalaydigan inson aqliy faoliyati taraqqiyotining muhim omili bo‘lgan soha bu ",
-                javob: "nofera"
-            },
-            {
-                savol: "Inson oldidagi masala - bu o‘z qobiliyatini har tomonlama rivojlantirib, insoniyat taraqqiyoti bosqichlariga, madaniy hayotiga o‘zining hissasini qo‘shishdan iborat",
-                javob: "Hayotning  manosi"
-            },
-            {
-                savol: "Individning muayyan bilimlar tizimida norma va qadriyatlarni o‘zlashtirish jarayoni bu ",
-                javob: "Ijtimoyillashuv"
-            },
-            {
-                savol: "Tirik organizmlarning taksonomik guruhlari va tarixiy taraqqiyoti bu",
-                javob: "Filogenuz"
-            },
-            {
-                savol: "O‘zida biologik, ijtimoiy va psixik xususiyatlarni mujassamlashtirgan ongli mavjudot ",
-                javob: "Inson"
-            },
-            {
-                savol: "Shaxsning  tarkibiy tuzilish xususiyatiga nimalar kirmaydi",
-                javob: "Agrissiv  Komponint"
-            },
-            {
-                savol: "Organizmlarning barcha genlar yig‘indisi  ",
-                javob: "genotip"
-            }, // 80-savol
-            {
-                savol: "Alohida sifat va miqdor aniqligiga ega bo‘lgan narsa, hodisa va jarayon bu",
-                javob: "Yakkalik"
-            },
-            {
-                savol: "Ob’ektiv voqelikning barcha yoki bir qancha narsa yoki hodisalaridagi ob’ektiv mavjud bo‘lgan tomonlar, xossalar va belgilarning majmui bu ",
-                javob: "Umumiylik"
-            },
-            {
-                savol: "Qonuniyatlarga asoslangan rivojlanishning namoyon bo‘lishi",
-                javob: "Voqelik"
-            },
-            {
-                savol: "Global muammolarni hal qilish uchun amaliy tavsiyalar ishlab chiqadigan ta’limot qanday nomlanadi ",
-                javob: "Globalistika"
-            },
-            {
-                savol: "O‘zida alohidalik, maxsuslik, umumiylikning mazmunini, sababini, zaruriyatini, imkoniyatini, butun, qism, sistema, struktura, element tarzida namoyon bo‘lish bu",
-                javob: "Mohiyat"
-            },
-            {
-                savol: "Narsa va   hodisalarning rivojlanish jarayonidagi sistemani tashkil qilgan elementlarning strukturaviy bog‘lanishini  ifodalaydigan kategoriya ",
-                javob: "Mazmun"
-            },
-            {
-                savol: "Qaysilar dialektika qonunlari  turkumiga kiradi",
-                javob: "Qarama –qarshi  va kurash qonuni , inkorni – inkor qonuni"
-            },
-            {
-                savol: "Hissiy bilishning shakllarini aytib bering",
-                javob: "Sezgi , idrok , tasavvur"
-            },
-            {
-                savol: "Bilishning empirik darajasi uslublari",
-                javob: "kuzatish , o`lchash , taqqoslash ekspreminti"
-            },
-            {
-                savol: "Prognozlash usullari",
-                javob: "Ektropolyatsiya- kelajakni  oldindan bilish"
-            }, // 90-savol
-            {
-                savol: "Tushuncha, hukm, xulosa chiqarish shaklidagi bilishning yuqori bosqichi, voqelikni mavhumlashgan, abstraklashgan ifodasi ",
-                javob: "Taffakur"
-            },
-            {
-                savol: "Ilmiy bilishning nazariy darajasi uslublarini aniqlang",
-                javob: "Aniqlik va mavhumlik(aksiomatik, gepotiza) "
-            },
-            {
-                savol: "Mantiq fani nimani o‘rganadi",
-                javob: "Tafakkur shakli va qonunlarni"
-            },
-            {
-                savol: "Sillogizm bu ",
-                javob: "Detuktiv xulosa chiqarish (hisobga olaman)"
-            },
-            {
-                savol: "“A B yoki B emasdir”",
-                javob: " Istisno qonuni"
-            },
-
-            {
-                savol: "To‘g‘ri fikrlashning asosiy belgilarini ko‘rsating ",
-                javob: "Izchilligi , aniqligi , asosli ,ziddiyatsiz"
-            },
-            {
-                savol: " Formal mantiq qonunlariga qaysilar kiradi",
-                javob: " Ayniyat, istisno, yetarlilik, nozidlik"
-            },
-            {
-                savol: "“A ham B emas bo‘la olmaydi” bu ",
-                javob: "Nozidlik qonuni"
-            },
-            {
-                savol: "“A-A dir” formulasi qaysi tafakkur qonunini izohlaydi",
-                javob: "Ayniyatlik qonuni"
-            },
-            {
-                savol: "“Agar B mavjud bo‘lsa uning asosi sifatida A ham mavjud” formulasi qaysi tafakkur qonuniga tegishli ",
-                javob: "Yetarli asos qonuni"
-            }, // 100-savol
-            {
-                savol: "“Alkоgоlizm - ko‘p jinоyatlarning bоsh sababchisi”. Keltirilgan fikr qaysi mushohada ko‘rinishiga tegishli",
-                javob: "Munosabatga doir"
-            },
-            {
-                savol: " “Tafakkur  tilsiz mavjud bo‘lishi mumkin emas” keltirilgan mushoda ",
-                javob: "Mavjudlikka doir mushohada"
-            },
-            {
-                savol: " “Yolg‘iz Munisgina bu hоdisaning guvоhi bo‘ldi”. Keltirilgan fikr qaysi mushohada ko‘rinishiga tegishli",
-                javob: "Ajratib ko’rsatilgan mushohada"
-            },
-            {
-                savol: " Narsa, hodisalar ularning muhim, umumiy va o‘ziga xos belgilarini inson ongida yaxlit aks ettiradigan tafakkur shakli qanday ataladi ",
-                javob: "Tushuncha"
-            },
-            {
-                savol: "Predmetlar, hodisalar, ularning belgilari, xususiyatlari, munosabatlarini tasdiq yoki inkor shaklida ifodalovchi tafakkur shakli",
-                javob: "Hukum mushohada"
-            },
-            {
-                savol: "Aqliy bilishning muhim vositalaridan biri, yangi bilimlar hosil qilish usuli ",
-                javob: "Hulosa chiqarish"
-            },
-            {
-                savol: "Mushоhadalar o‘zarо munоsabatlarga ko‘ra qanday turlarga bo‘linadi",
-                javob: "Taqoslanadi,taqoslar"
-            },
-            {
-                savol: "“Til”  deganda nima tushuniladi ",
-                javob: "Muloqat vositasi"
-            },
-            {
-                savol: "Bilishning tushuncha, hukm, xulosa chiqarishga asoslanadigan shakli",
-                javob: "Aqliy bilish"
-            },
-            {
-                savol: "S-P dir; S-P emasdir. Formula qaysi tafakkur shakliga tegishli",
-                javob: "Hukum"
-            }, //110-savol
-            {
-                savol: " Xulosa chiqarish turlarini ko‘rsating",
-                javob: "Induktiv, diduktiv, mantiqiy"
-            },
-            {
-                savol: "Mantiqiy isbotlash bu ",
-                javob: "Biror fikirni boshqa fikir bilan ifoda mulohazani chinligini,chinligi avaldan tasdiqlashBorliqning eng muhim hususiyatlari"
-            },
-            {
-                savol: "Mushohadaning qanday turlarini bilasiz",
-                javob: "sodda, murakab"
-            },
-            {
-                savol: "“O‘zbekistоn — mustaqil davlat”. Keltirilgan fikr qaysi xulosa chiqarish turiga tegishli ",
-                javob: "Deduktiv"
-            },
-            {
-                savol: "Dalillashning qanday turlarini bilasiz",
-                javob: "Bevosita , vositali"
-            },
-            {
-                savol: "Tezisning chinligini asoslash uchun keltirilgan hukmlar ",
-                javob: "Argumentlar"
-            },
-            {
-                savol: "Chinligi asoslanishi lozim bo‘lgan hukm bu",
-                javob: "Tezis"
-            },
-            {
-                savol: "Isbotlash usuli ",
-                javob: "Demonstratsiya"
-            },
-            {
-                savol: "Raddiya bu",
-                javob: "mantiqiy amallar isbotni buzishga qaraladi"
-            },
-            {
-                savol: "Raddiya usullari keltirilgan qatorni toping ",
-                javob: "Tezis, demakratsiya, Argumentni rad etish"
-            }, // 120-SAVOL
-            {
-                savol: " Axloq so‘zining aniq ta’rifini ko‘rsating",
-                javob: "Jamiyat , zamonga namuna bo`digan ijobiy hatti harakatlar"
-            },
-            {
-                savol: "Axloqning tarkibiy qismlarini ko‘rsating ",
-                javob: "Ong, Aql, munosabat va xulq"
-            },
-            {
-                savol: "Qadimgi yunon faylasuflaridan kimlar birinchi bo‘lib axloq masalalari haqida fikr yuritgan",
-                javob: "Suqrot, Arastu , Epikur, Demokrit"
-            },
-            {
-                savol: "Evdemonizm ",
-                javob: "inson asosiy faoliyatining Baxtga erishuvga intilishi"
-            },
-            {
-                savol: "Gedonizm ta’limotining hayotda asosiy maqsadi",
-                javob: "birinchi pog‘onasiga Lazzatlanish va huzurlanish  qo‘yiladi "
-            },
-            {
-                savol: "Kishilarning bir-biriga, o‘zlari mansub jamoaga, vatanga nisbatan tarkib topgan munosabatlarining ifodalanishi qanday qadriyatlar turiga kiradi ",
-                javob: "Axl , Qadriyat"
-            },
-            {
-                savol: " Inson xatti-harakatlarini ichki axloqiy tartibga solishning murakkab mexanizmini belgilovchi axloqiy kategoriya",
-                javob: "Vijdon"
-            },
-            {
-                savol: "Yoshlar tarbiyasida qaysi tashkilot muhim rol o‘ynaydi",
-                javob: "Mahalla"
-            },
-            {
-                savol: "Axloq so‘zi lotincha moresdan kelib chiqqan bo‘lib, u qanday ma’noni anglatadi",
-                javob: "Xulq atvor va odat"
-            },
-            {
-                savol: " Etika fanining kategoriyalarini ko‘rsating ",
-                javob: "Muhabbat va nafrat, sadoqat va hiyonat"
-            }, // 130-savol
-            {
-                savol: "Estetikaning asosiy tadqiqot  ob’ekti bu",
-                javob: "Go'zallik"
-            },
-            {
-                savol: " “Estetika” atamasini birinchi bo‘lib ilmiy muomalaga kiritgan faylasufni aniqlang  ",
-                javob: "Aliksandr Boungartn"
-            },
-            {
-                savol: "Estetikaning qaysi kategoriyasi yuksaklik kategoriyasi bilan bevosita bog‘liq",
-                javob: "Qahramonlik"
-            },
-            {
-                savol: "Tasviriy sanʼat turi, u chiziq (shtrix)lardan iborat bu ",
-                javob: "Grafika"
-            },
-            {
-                savol: "Odamlar qo‘l mehnati bilan bog‘liq bo‘lgan san’at turi bu",
-                javob: "Hunarmandchilik"
-            },
-            {
-                savol: "“Insonda hamma narsa go‘zal bo‘lishi kerak - kiyim, qalb,  chehra va fikrlar” degan g‘oya kimga tegishli ",
-                javob: "P.CHexov"
-            },
-            {
-                savol: "Sharqning Rafaeli deb e’tirof etilgan Kamoliddin Behzodning asarlari qaysi janrda ishlangan",
-                javob: "K. Behzod (minyatura janr)"
-            },
-            {
-                savol: "G‘arb uyg‘onish davri san’atining taniqli vakillarini aniqlang ",
-                javob: "Shekspir, Rafail, Anjilina ,Reavranol"
-            },
-            {
-                savol: "Insonning ichki emotsional ruhiyati, hissiyotlari va kayfiyatini qaysi badiiy adabiyot aks ettiradi",
-                javob: "Lirika"
-            },
-            {
-                savol: " “Etika” atamasini birinch bo‘lib muomalaga   kiritgan  mutafakkir ",
-                javob: "Arastu , Suqrot"
-            }, // 140-savol
-            {
-                savol: "Bahs yuritish san’ati qanday nomlanadi",
-                javob: "Eristika"
-            },
-            {
-                savol: "Muammo nima ",
-                javob: "Yechish usuli nomalum bo`lgan masalani yechish yangicha yondashish kerak "
-            },
-            {
-                savol: "Ijtimoiy tabiiy munosabatlarning keskinlashuvi natijasida kelib chiqayotgan va butun dunyoga taalluqli muammolar",
-                javob: "Global muammolar"
-            },
-            {
-                savol: "Hali isbotlanmagan muayyan muammo yechimi yuzasidan berilgan  g‘oyalar, nuqtai nazarlar,  qarashlar tizimi ",
-                javob: "Gepotiza"
-            },
-            {
-                savol: "Amal qilish doirasiga ko‘ra qadriyat turlarini aniqlang",
-                javob: "Milliy , mintaqaviy, umumiy"
-            },
-            {
-                savol: "Qadr-qimmat nima ",
-                javob: "Shaxsni hurmat va hulq atvorini himoya etish"
-            },
-            {
-                savol: "Demografik muammo deganda qanday muammolar tushuniladi",
-                javob: "Aholini sonini ortishi va tez suratda ko`payishi"
-            },
-            {
-                savol: " Beqarorlik nima ",
-                javob: "Barqarorlikni izdan chiqqaris"
-            },
-            {
-                savol: "Hozirgi zamon sivilizatsiyasi inqirozini nima keltirib chiqardi",
-                javob: "Ilmiy texnik taraqqiyot"
-            },
-            {
-                savol: "Qadriyatning falsafiy ta’rifi keltirilgan to‘g‘ri javobni toping ",
-                javob: "Inson va insoniyat uchun ahamiyatli va shu tufayli ezozlanadigan voqea jarayon"
-            }, // 150-savol
-            {
-                savol: "Olamning atomistik tuzilishini ijodiy tafakkurning namunasi sifatidagi g’oyaning dastlabki yaratuvchilari",
-                javob: "Demokrit , Devfkiv"
-            },
-            {
-                savol: "Pifagor ta’limotida dunyoning asosini nima tashkil qiladi ",
-                javob: "Sonlar"
-            },
-            {
-                savol: "“Hamma narsa suvdan paydo bo‘ladi va yana suvga qaytadi” fikr kimga tegishli",
-                javob: "Falis"
-            },
-            {
-                savol: "Atomlar haqidagi ta’limotning asoschisi  ",
-                javob: "Demokrit"
-            },
-            {
-                savol: "“Ayni bir daryoga ikki marta tushib boʻlmaydi” fikr kimga tegishli",
-                javob: "Geroklit"
-            },
-            {
-                savol: "Jamiyatning moddiy hayot sohasiga nimalar kiradi ",
-                javob: "Jamiy moddiy sohasi, moddiy boyliklar , oziq ovqat"
-            },
-            {
-                savol: "Inson qarashlarining shakllanish imkoniyatlari, usul va vositalari, ularning kundalik ong darajasidan nazariy g‘oyalar darajasiga kotarilish jarayonini ifodalovchi funksiya",
-                javob: " Dunyo qarashlilik "
-            },
-            {
-                savol: "Jamiyatning ma’naviy  hayot sohasiga nimalar kiradi ",
-                javob: "Olamni anglash , inson  va jamiyat tug`risidagi qarashlar"
-            },
-            {
-                savol: "Falsafa nimaga asoslanadi",
-                javob: "Aql va obyiktiv bilimga"
-            },
-            {
-                savol: "Aksiologiya nima ",
-                javob: "Qadriyatlarni uzgaruvchi soha"
-            }, // 160-savol
-            {
-                savol: "Eng oliy qadriyat nima",
-                javob: "Inson"
-            },
-            {
-                savol: "Bashariyat оldida qanday qaltis muammоlar paydо bo‘ldi",
-                javob: "Yadro urush , terrorizm urushi hafi"
-            },
-            {
-                savol: "Ommaviy madaniyatning axloqqa salbiy ta’sirini qanday tushunasiz",
-                javob: "Axloqiy buzuqlik , individualism va zuravonlik boshqa g`oyalar"
-            },
-            {
-                savol: "Insonning aql madaniyati, orzu-umidlari va tabiatini namoyish etuvchi tuyg‘u bu ",
-                javob: "Ezgulik"
-            },
-            {
-                savol: "Dizayn qaysi faoliyat turiga kiradi",
-                javob: "Moddiy amaliy"
-            },
-            {
-                savol: "Insonnning dunyo voqea-hodisalariga o‘ziga xos munosabatlaridan biri bu ",
-                javob: "Kulgulilik"
-            },
-            {
-                savol: "Estеtik tarbiyaning asosiy vositalari",
-                javob: "Ommaviy axborot, tabiat, sport va urf odatlar"
-            },
-            {
-                savol: "Estetik faoliyat va estetik didni shakllantirishning muhim omilini ko‘rsating Falsafaning predmeti ",
-                javob: "Texnogin sivilizatsiya"
-            },
-            {
-                savol: "Abstraktsiya bu",
-                javob: "Reallikni fikran obrazini yaratish ,realikka qadam  "
-            },
-            {
-                savol: "Tushunish, tushuntirish, tahlil etish g‘oyalariga e’tibor qaratuvchi ta’limot ",
-                javob: "Germiniftika"
-            }, // 170-savol
-            {
-                savol: "Qaysi faylasuf tomonidan aporiyalar ishlab chiqilgan",
-                javob: "Zinon"
-            },
-            {
-                savol: "“Falsafa” fanining tor ma’nodagi ta’rifini toping ",
-                javob: "Madaniyat sanat "
-            },
-            {
-                savol: "“Falsafa” fanining kеng ma’nodagi ta’rifini toping",
-                javob: "Shaxs"
-            },
-            {
-                savol: "“Filosofiya” so‘zini  Abu  Nasr  Forobiy qanday talqin etgan",
-                javob: "Hikmatni qadrlash"
-            },
-            {
-                savol: "Falsafiy dunyoqarashning  tamoyillarini bеlgilang",
-                javob: "Universal ilmiylik, tarixiylik,maqsadiylik"
-            },
-            {
-                savol: "“Inson hayoti tugallanmagan loyiha” dеb qaysi ta’limot ta’kidlaydi",
-                javob: "egzistionasolizm"
-            },
-            {
-                savol: "Naturfalsafa bu",
-                javob: "Insonni tabiatga"
-            },
-            {
-                savol: "Substantsiya tushunchasi nimani anglatadi ",
-                javob: "Narsa va hodisa mohiyatini "
-            },
-            {
-                savol: "Qaysi fikrlash usuli bilishda aqlning ustuvorligini tan oladi",
-                javob: "Ratsionalizm"
-            },
-            {
-                savol: " Quyida keltirilganlardan qaysi biri ilmiy bilish shakllariga taalluqli emas ",
-                javob: "Fikr"
-            }, // 180-savol
-            {
-                savol: "Faqat sababiy boqlanishlar orqali dunyoning falsafiy manzarasini yoritib bеruvchi oqim nima dеb nomlanadi",
-                javob: "detirminizm"
-            },
-            {
-                savol: "Kulgililik o‘zining barcha хilma-хil ko‘rinishlari bоyligi bilan san’atning ...dan bоshqa dеyarli hamma turlarida namоyon bo‘ladi ",
-                javob: "Me`morchilik"
-            },
-            {
-                savol: "«Evtonaziya» so‘zi nimani anglatadi",
-                javob: "Totli o`lim"
-            },
-            {
-                savol: "Ruhiy tahlil falsafasining asоschisi kim",
-                javob: "J.Freyd"
-            },
-            {
-                savol: "Ijtimoiy tabiiy munosabatlarning keskinlashuvi natijasida kelib chiqayotgan va butun dunyoga taalluqli muammolar",
-                javob: "Global muammolar"
-            },
-            {
-                savol: "Demografik muammo deganda qanday muammolar tushuniladi",
-                javob: "Yer yuzida odamlar sonining ko`payishi va tez suratlarda ortib borishi"
-            },
-            {
-                savol: "Hozirgi zamon sivilizatsiyasi inqirozini nimalar keltirib chiqargan",
-                javob: "Jamiyat hayotida puxta o`ylangan strategiyaning yuqligi"
-            },
-            {
-                savol: "Nemis klassik falsafasining asоschisi ",
-                javob: "Kant"
-            },
-            {
-                savol: "Kant falsafasining rivоji ikki davrga bo‘linadi",
-                javob: "Tanqidiy davrgacha bo`lgan davr tanqidiy davr(2 ta davr)"
-            },
-            {
-                savol: "Gegel falsafiy ta’limоti bo‘yicha оlamni asоsida nima yotadi ",
-                javob: "Mutloq g`oya"
-            }, // 190-savol
-            {
-                savol: "Inson olamning markazi va eng yuqori maqsadi bo‘lgan dunyoqarash  turini aniqlang",
-                javob: "Antroposentizm"
-            },
-            {
-                savol: "Fan  nima ",
-                javob: "Ilmiy bilimlar tizimi"
-            },
-            {
-                savol: "Inson haqidagi ta'limot bu",
-                javob: "Antrapologiya"
-            },
-            {
-                savol: " Konfutsiy falsafasida “Li” tushunchasi nimani anglatadi",
-                javob: "Odob qoidalari"
-            },
-            {
-                savol: "Dаоsizmga ko‘ra,  tabiat va inson hayoti  “ilohiy samoviy qonun”ga bog‘liq emas, balki narsalarning tabiiy yo‘li, qonuni nimaga  asoslanadi",
-                javob: "Duoga"
-            },
-            {
-                savol: "Zardushtiylik dinida yaxshilik va yomonlik, hayot va o‘lim, do‘zax va jannat, yorug‘lik va zulmatga qarshi turadi. Bunday qarashlarda nimalar aks etadi",
-                javob: "Dualizm"
-            },
-            {
-                savol: "Madaniyatning asl shakli va asosiy manbai bu ",
-                javob: "Inson mehnati"
-            },
-            {
-                savol: "Moddiy madaniyat bu",
-                javob: "Mehnat qurollari, mehnat ko`nikmalari"
-            },
-            {
-                savol: " Bahоlash nima",
-                javob: "Voqea hodisalarning qadrini yoki ijtimoiy ahamyatini anglashining maxsus shakli"
-            },
-            {
-                savol: "Insonning hayvonlardan farq qilinadigan omil",
-                javob: "Ong"
-            }//200-savol
-        ];
-
-        function chiqarsin() {
-            var input = document.f1.t1.value;
-
-            var input2 = document.f1.r2.value;
-            for (var i = 0; i < savolJavob.length; i++) {
-                if (input === savolJavob[i].savol) {
-                    document.f1.r2.value = savolJavob[i].javob;
-                }
-                if (input2 === savolJavob[i].javob) {
-                    document.f1.t1.value = savolJavob[i].savol;
-                }
-            }
-        }
-    </script>
+	<title></title>
 </head>
-
 <body>
-    <form name="f1">
-        <input type="text" name="t1" style="width: 90%; height: 40px; margin: 10px;">
-        <button onclick="chiqarsin(); return false" value="chiqarsin" style="width: 90%; height: 40px;margin: 10px;">Javob chiqarsin</button>
-        <input type="text" name="r2" style="width: 90%; height: 40px; color: black; margin: 10px; font-weight: bold;">
-    </form>
-</body>
+1.  Odam xiyobon boʻylab 240 m yurgandan keyin chorrahada perpendikulyar yo’nalishga burildi va yana 70 m yurdi. Odamning bosib oʻtgan yoʻli uning koʻchish modulidan necha marta katta? <br>
+A. 1.24<br>
+B. 1,7<br>
+C. 1,5<br>
+D. 1,85<br>
+ANSWER: A<br>
+2.  Jism x oʻqi boʻylab 6 m/s oʻzgarmas tezlik bilan koordinatasi x0= -7 m boʻlgan nuqtadan harakat qila boshladi. Necha sekund oʻtgandan keyin jismning koordinatasi 5 m boʻladi. <br>
+A. 2 s<br>
+B. 4 s<br>
+C. 5 s<br>
+D. 3 s<br>
+ANSWER: A<br>
+3.  Poyezd birinchi 5 soat 60 km/soat tezlik bilan, keyingi 4 soat 15 km/soat tezlik bilan  harakatlandi. Poyezdning butun harakati davomidagi oʻrtacha tezligini (km/soat) toping?<br>
+A. 40 <br>
+B. 37.5 <br>
+C. 45 <br>
+D. 50 <br>
+ANSWER: A<br>
+4.  Avtomobil tekis tezlanuvchan harakatni boshlab 10 s da 36 km/soat tezlikka erishdi. Avtomobilning tezlanishini toping?  <br>
+A. 1  m/s^2 <br>
+B. 2  m/s^2 <br>
+C. 1.5  m/s^2 <br>
+D. 0.5  m/s^2 <br>
+ANSWER: A<br>
+5.  Agar poezd tormozlanish yoʻlini 0.5 m/s2 tezlanish bilan 30 s da bosib o’tgan bo’lsa, uning  tormozlanish boshidagi tezligi qanday boʻlgan?<br>
+A. 15  m/s<br>
+B. 7.5  m/s<br>
+C. 12  m/s<br>
+D. 12.5  m/s<br>
+ANSWER: A<br>
+6.  Tezlik 15 m/s boʻlganda avtomobilning tormozlanish yoʻli 1,5 m ga teng. Agar tormozlanish ikkala holda ham bir xil tezlanish bilan sodir boʻlgan boʻlsa avtomobilning tezligi 90 km/soat boʻlganda tormozlanish yoʻli qanday boʻladi,? <br>
+A. 4.17 m<br>
+B. 5.6 m<br>
+C. 4.7 m<br>
+D. 4.25 m<br>
+ANSWER: A<br>
+7.  Jism yer sirtidan vertikal yuqoriga 20 m/s tezlik bilan otildi. U qanday maksimal baladlikka koʻtariladi? g=10 m/s2.<br>
+A. 20 m<br>
+B. 30 m<br>
+C. 10 m<br>
+D. 15 m<br>
+ANSWER: A<br>
+8.  Erkin tashlab yuborilgan jismning tezligi biror vaqtdan keyin 6 m/s ga teng boʻldi, yana 2 s dan keyin jismning tezligi qanday boʻladi? g=10 m/s2. <br>
+A. 26  m/s<br>
+B. 10  m/s<br>
+C. 15  m/s<br>
+D. 25  m/s<br>
+ANSWER: A<br>
+9.  Koptok 2,4 m balandlikdan 1 m/s tezlik bilan vertikal pastga tashlandi. Uning yerga tushgan paytdagi tezligi nimaga teng boʻladi? g=10 m/s2<br>
+A. 7 m/s<br>
+B. 10  m/s<br>
+C. 12 m/s<br>
+D. 14  m/s<br>
+ANSWER: A<br>
 
+10.  Bir gʻildirak bir sekundda 50 marta tekis aylandi. Ikkinchi gʻildirak esa 30 sekundda 500 marta tekis aylanadi. Birinchi gʻildirakning burchak tezligi ikkinchisinikidan necha marta katta?<br>
+A. 3<br>
+B. 2<br>
+C. 4<br>
+D. 7<br>
+ANSWER: A<br>
+11.  4π rad/s burchak tezlik bilan aylanayotgan gʻildirak necha sekundda 100 marta aylanadi? <br>
+A. 50 s<br>
+B. 40 s<br>
+C. 25 s<br>
+D. 20 s<br>
+ANSWER: A<br>
+12.  Agar aylanayotgan gʻildirakning davri 5 marta kamaysa, gʻildirakning gardishidagi nuqtaning markazga intilma tezlanishi necha marta ortadi?<br>
+A. 25<br>
+B. √5<br>
+C. 5<br>
+D. ∛25<br>
+ANSWER: A<br>
+13.  Harakat tenglamasi  φ =A +Bt2 +Ct3   ko’rinishga ega. Jismning 5 sekundagi burchak tezligi va burchaktezlanishini toping (B=2 rad/s, C=1 rad/s2).<br>
+A. 95 rad/s, 34 rad/s2<br>
+B. 75 rad/s, 45 rad/s2<br>
+C. 88 rad/s, 31 rad/s2<br>
+D. 85 rad/s, 40 rad/s2<br>
+ANSWER: A<br>
+14.  Tekis tezlanuvchan va tekis sekinlanuvchan harakatlarda qanday fizik kattalik o’zgarmas bo’ladi?<br>
+A. tezlanish<br>
+B. tezlik<br>
+C. vaqt<br>
+D. ko’chish<br>
+ANSWER: A<br>
+15.  Tekis o’zgaruvchan aylanma harakat burilish burchagining   formulasini korsating:<br>
+A. φ=ω_0t ±(βt^2)/2<br>
+B. φ=ω_0 ±(βt^2)/2<br>
+C. ω_t=ω_0 ±βt<br>
+D. ω_t=ω_0 -βt^2<br>
+ANSWER: A<br>
+16.  Tekis o’zgaruvchan harakatda tezlik qaysi formula orqali topiladi?  <br>
+A. v0±at<br>
+B. v0±at2<br>
+C. g/t<br>
+D. (v2-v_0^2)/2a<br>
+ANSWER: A<br>
+17.  Tekis tezlanuvchan harakatda yo'l qaysi formula bilan aniqlanadi?<br>
+A. S=v_0 t+(at^2)/2<br>
+B. S=v_0 t^2+at/2<br>
+C. v_0 t^2+(at^2)/2<br>
+D. v_0 t^2+gt/2<br>
+ANSWER: A<br>
+18.  Aylanma harakatda burchak tezligining ifodasi nimaga teng?<br>
+A. ω= dφ/dt<br>
+B. β=  dω/dt<br>
+C. a=dv/dt<br>
+D. a=const<br>
+ANSWER: A<br>
+19.  Agar tezlanishning ifodasi quyidagicha bolsa а_t=0, а_n≠0 , u qanday harakat?<br>
+A. Aylanma harakat<br>
+B. Tekis harakat<br>
+C. Egri chiziqli harakat<br>
+D. Tekis tezlanivchan harakat<br>
+ANSWER: A<br>
+20.  Burchakli va chiziqli tezlik o'rtasidagi bog’lanish ifodasini ko'rsating:<br>
+A. v=ωr<br>
+B. v=βr<br>
+C. ω=dφ/dt<br>
+D. v=at.<br>
+ANSWER: A<br>
+21. Harakatlantiruvchi kuch va qarshilik kuchining kattaliklari teng bo’lsa,……………harakatini davom ettiradi.<br>
+A. jism to’gri chiziqli tekis<br>
+B. jism to’gri chiziqli notekis<br>
+C. jism egri chiziqli tekis<br>
+D. jism egri chiziqli notekis<br>
+ANSWER: A<br>
+22. Agar harakatlantiruvchi kuch qarshilik kuchidan katta bo’lsa jism........... harakat qiladi.<br>
+A. tekis tezlanuvchan<br>
+B. tekis sekinlanuvchan<br>
+C. tekis<br>
+D. harakatlanmaydi<br>
+ANSWER: A<br>
+23.  Qarshilik kuchi harakatlantiruvchi kuchdan katta bo’lsa,  jism………..harakat qiladi.<br>
+A. tekis sekinlanuvchan<br>
+B. tekis tezlanuvchan<br>
+C. tekis<br>
+D. harakatlanmaydi<br>
+ANSWER: A<br>
+24. Jism yuqoriga tekis sekinlanuvchan harakat qilganda uning o’girligi o’girlik kuchidan …………….bo’ladi (yoki uning og’irligi……..)<br>
+A. kichik, kamayadi <br>
+B. kichik, ortadi<br>
+C. katta, kamayadi<br>
+D. katta, ortadi<br>
+ANSWER: A<br>
+25. Jism pastga tekis tezlanuvchan harakat qilganda uning og’irligi og’irlik kuchidan …………bo’ladi (yoki uning og’irligi ……….)<br>
+A. kichik, kamayadi<br>
+B. katta, ortadi<br>
+C. katta, kamayadi<br>
+D. kichik, ortadi<br>
+ANSWER: A<br>
+26. Avtomobilning og’irligi 1 tonna. Avtomobilga harakat davomida uning og`irligining 0,1 qismiga teng bo`lgan ishqalanish kuchi ta`sir etadi. Agar, avtomobil o`zgarmas tezlik bilan harakatlanlanib: <br>
+1) yo’lning qiyaligi har 25 m. ga 1 m. bo`lgan toqqa chiqayotgan;<br>
+2) xuddi shunday qiyalikdan tushayotgan bo’lsa avtomobil motorining tortish kuchini toping.<br>
+A. 1400 N;600 N<br>
+B. 1200 N;700 N<br>
+C. 1400 N;900 N<br>
+D. 1200 N;800 N<br>
+ANSWER: A<br>
+27. Stol ustida massasi m1=4 kg bo’lgan  aravacha turipti. Aravachaga blok orqali o`tkazilgan arqonning bir uchi bog`langan. Agar arqonning ikkinchi uchiga m2=1 kg massali tosh bog`langan bo`lsa, aravacha qanday a tezlanish bilan harakatlanadi?<br>
+A. 2,0 m/s2<br>
+B. 2,5 m/s2<br>
+C. 1,5 m/s2<br>
+D. 0,5m/s2<br>
+ANSWER: A<br>
+28. Prujinali toroziga blok ilingan. Blok orqali ip o`tkazilib, uning uchlariga m1=1,5 kg va m2=3 kg massali toshlar bog`langan. Toshlar harakatlanish paytida torozining ko`rsatgichi qanday bo`ladi? Blok va ipning massalarini e`tiborga olmang.<br>
+A. 5 kg<br>
+B. 4 kg<br>
+C. 6 kg<br>
+D. 7 kg<br>
+ANSWER: A<br>
+29.  x=A+Bt+Ct2+Dt3 tenglama bilan m=2 kg li moddiy nuqta F kuch ta`sirida harakatlanayapdi. Bu yerda С=1 m/s2, D=-0,2 m/s3, t1=2 s va 𝑣 t2=5 s vaqt momentlarida shu kuch qiymatini toping. Qanday vaqt momentida kuchning qiymati nolga teng bo`ladi?<br>
+A. -0,8 N, -8N,1,67 s<br>
+B. -0,6 N, -8N,1,77 s<br>
+C. -0,8 N, -6 N,1,67 s<br>
+D. -0,6 N, -6N,1,66 s<br>
+ANSWER: A<br>
+30. Normal sharoitda, havoning tezligi 𝑣=20 m/s, kesim yuzasi S=0,55 m2 bo`lsa, havo oqimining quvvati N qanday?(ρ=1,29kg/m3)<br>
+A. 2,8 kW<br>
+B. 2,7 kW<br>
+C. 2,5 kW<br>
+D. 2,6 kW<br>
+ANSWER: A<br>
+31. 5 m uzunlikdаgi аrqоngа оsilgаn 45 kg mаssаli jism 16 аyl/min chаstоtа bilаn аylаnmоqdа. Аrqоn vеrtikаl bilаn qаndаy burchаk tаshkil qilаdi vа uning tаrаnglik kuchi qаndаy?<br>
+A. α = 450; T = 0,63kN<br>
+B. α = 300; T = 0,63kN<br>
+C. α = 600; T = 0,65 kN<br>
+D. α = 450; T = 0,45 kN<br>
+ANSWER: A<br>
+32. Massasi 6 kg bo`lgan jism, o`zgarmas kuch ta`siri ostida birinchi sekundda 15 m ga teng bo`lgan yo`lni bosib o`tdi. Kuch kattaligini aniqlang.<br>
+A. F = 180 N<br>
+B. F = 185 N<br>
+C. F = 190 N<br>
+D. F = 195 N<br>
+ANSWER: A<br>
+33. 60 N kuch jismga 0,8 m/s2 tezlanish beradi. Qanday kuch shu jismga 2 m/s2 tezlanish bera oladi?<br>
+A. F2 = 150N<br>
+B. F2 = 160N<br>
+C. F2 = 170N<br>
+D. F2 = 180N<br>
+ANSWER: A<br>
+34. 36 km/soat tezlik bilan harakatlanayotgan 2 t massali avtomobil to’xtaguncha 25 m yo’lni bosib o’tdi. Tormozlovchi kuch qiymatini toping.<br>
+A. 4 kN<br>
+B. 7 kN<br>
+C. 6 kN<br>
+D. 5 kN<br>
+ANSWER: A<br>
+35. Massasi 2 kg boʻlgan jismni yuqoriga ogʻirlik kuchi tezlanishidan ikki marta katta tezlanish bilan koʻtarish uchun uni qanday kuch bilan koʻtarish kerak? g=10 m/s2.<br>
+A. 60 N<br>
+B. 40 N<br>
+C. 50 N<br>
+D. 20 N<br>
+ANSWER: A<br>
+36. Trosning uzilishga chidamliligi 1600 N ni tashkil etadi. Bu tros 15 m/s2 tezlanish bilan qanday maksimal massali yukni koʻtarishi mumkin? g = 10 m/s2.<br>
+A. 64 kg<br>
+B. 48 kg<br>
+C. 32 kg<br>
+D. 107 kg<br>
+ANSWER: A<br>
+37. 60 kg massali kosmonavt raketani vertikal uchishida tayanchga 5400 N kuch bilan bosadi. Raketaning tezlanishini toping? g = 10 m/s2.<br>
+A. 80 m/s2<br>
+B. 70 m/s2<br>
+C. 50 m/s2<br>
+D. 90 m/s2<br>
+ANSWER: A<br>
+38. Agar lift 3 m/s2 tezlanish bilan pastga harakatlanayotgan boʻlsa, liftda turgan ogʻirligi 70 kg massali odamning vazni nimaga teng? g = 10 m/s2.<br>
+A. 490 N<br>
+B. 910 N<br>
+C. 210 N<br>
+D. 70 N<br>
+ANSWER: A<br>
+39. 9 m balandlikdan boshlangʻich tezliksiz tushayotgan 0,5 kg massali jism yer sirtiga yaqinlashganda 12 m/s tezlikka erishdi. Havoning oʻrtacha qarshilik kuchini toping? g = 10 m/s2.<br>
+A. 1 N<br>
+B. 5 N<br>
+C. 4 N<br>
+D. 9 N<br>
+ANSWER: A<br>
+40.  Silliq gorizontal stolda 2 kg massali jismga gorizontga nisbatan yuqoriga  30° burchak ostida yoʻnalgan  30 N kuch ta’sir etayapti. Stolga jism qanday kuch bilan bosadi? g = 10 m/s2.<br>
+A. 5 N<br>
+B. 10,3 N<br>
+C. 35 N<br>
+D. 20 N<br>
+ANSWER: A<br>
+41.  Massasi 0,2 kg boʻlgan jism 1m balandlikdan 8 m/s2 tezlanish bilan tushyapti. Jism impuls oʻzgarishini aniqlang?<br>
+A. 0,8 кg∙m/s<br>
+B. 1,6 кg∙ m/s<br>
+C. 3,2 кg∙ m/s<br>
+D. 0,4 кg∙ m/s<br>
+ANSWER: A<br>
+42.  Massasi 100 kg boʻlgan snaryad temir yoʻl boʻylab 500 m/s tezlik bilan gorizontal uchib borib, massasi 10 T boʻlgan vagonga urildi va unga tiqilib qoldi. Agar vagon 36 km/soat tezlik bilan snaryadga qarshi harakatlanayotgan boʻlsa, vagonning urilishdan keyingi tezligini toping.<br>
+A. 4,95 m/s<br>
+B. 20 m/s<br>
+C. 4 m/s<br>
+D. 9 m/s<br>
+ANSWER: A<br>
+43. Portlash natijasida 15 m/s tezlik bilan uchib borayotgan granata massasi 6 va 14 kg boʻlgan oskolkalarga (boʻlakchalarga) ajraldi. Massasi katta oskolka harakat yoʻnalishi boʻylab 24 m/s tezlik bilan harakatini davom ettirdi. Kichkina boʻlakchaning tezligi va harakat yoʻnalishi topilsin.<br>
+A. -6 m/s<br>
+B. -14,6 m/s<br>
+C. -21 m/s<br>
+D. -1 m/s<br>
+ANSWER: A<br>
+44.  400 m/s tezlik bilan uchib borayotgan oʻq  toʻnkaga borib tegadi va unga 0,5 m kirib toʻxtaydi.Agar oʻqning massasi 24 g boʻlsa, uning harakatiga qarshilik kuchini toping. <br>
+A. 3,8 kN<br>
+B. 11,4 kN<br>
+C. 7,6 kN<br>
+D. 1,9 kN<br>
+ANSWER: A<br>
+45. 5 m balandlikdan tushayotgan 2 kg massali yuk yumshoq tuproqqa 5 sm kiradi.Tuproqning oʻrtacha qarshilik kuchini aniqlang. g = 10 м/с2.<br>
+A. 2 kN<br>
+B. 3 kN<br>
+C. 1 kN<br>
+D. 0,5 kN<br>
+ANSWER: A<br>
+46. Bikrligi 30 N/sm boʻlgan prujinani 20 sm ga siqish uchun bajarilgan ishni toping. Bunda deformatsiyani elastik deb hisoblang.<br>
+A. 60 J<br>
+B. 30 J<br>
+C. 15 J<br>
+D. 75 J<br>
+ANSWER: A<br>
+47.  Gorizontal uchib borayotgan oʻq  L uzunlikdagi vaznsiz qattiq sterjenga osilib turgan sharga borib tegadi va unga tiqilib qoladi. Oʻqning massasi m1= 5 g, shar massasi m2= 0,5 кg. Oʻqning tezligi υ1=500 m/s. Sterjen uzunligi qanday boʻlganda oʻqning urilishi natijasida shar aylananing eng yuqori nuqtasigacha koʻtariladi. g = 10 м/с2.<br>
+A. 0,61  m<br>
+B. 0,92 m<br>
+C. 0,32 m<br>
+D. 1,28 m<br>
+ANSWER: A<br>
+48. Tinch turgan devorga massasi m1=0,5 кg  yogʻoch bolgʻa bilan urilyapti. Urilish paytida bolgʻaning tezligi υ1=1 m/s ga   teng boʻlgan. Agar tiklanish koeffitsienti k=0,5 boʻlsa,  urilish natijasida ajralib chiqqan Q issiqlik miqdorini aniqlang. (k=υ2/υ1 ).<br>
+A. 0,19 J<br>
+B. 0,38 J<br>
+C. 0,44 J<br>
+D. 0,76 J<br>
+ANSWER: A<br>
+49. Kinetik energiyasi 8 J, impuls kattaligi 4 kg∙m/s  ga teng, jism massasini toping.<br>
+A. 1 кg<br>
+B. 0,5 kg<br>
+C. 2 кg<br>
+D. 3 кg<br>
+ANSWER: A<br>
+50. Bola massasi 0,4 kg bolgan futbol koptogini Yer yuzidan 3 m balandlikka otdi. Bunday balandlikda koptok qanday potensial energiyaga ega boʻladi. g = 10 м/с2.<br>
+A. 12 J<br>
+B. 4 J<br>
+C. 1,2 J<br>
+D. 10 J<br>
+ANSWER: A<br>
+51. Nuqtaning toʻgʻri chiziq boʻylab harakati x=4t-0,05t2 tenglama bilan berilgan. Vaqtning qanday momentida nuqta tezligi nolga teng boʻladi.<br>
+A. 40 s<br>
+B. 20 s<br>
+C. 10 s<br>
+D. 30 s<br>
+ANSWER: A<br>
+52. Harakatsiz aravadagi odam massasi 8 kg bo’lgan toshni yerga nisbatan 5 m/s tezlik bilan gorizontal yo’nalishda oldinga tomonga uloqtirdi. Odamning arava bilan birgalikda massasi 160 kg bo’lsa, toshni uloqtirishda odam necha joul ish bajargan?<br>
+A. 105<br>
+B. 160<br>
+C. 100<br>
+D. 153<br>
+ANSWER: A<br>
+
+53. m = 4 kg massali yaxlit silindr gorizontal sirt bo’ylab sirpanishsiz dumalamoqda. Silindr o’qining chiziqli tezligi 𝓋 =1 m/s. Silindring to’liq kinetik energiyasi aniqlansin (J)?<br>
+A. 3<br>
+B.4<br>
+C. 2<br>
+D. 6<br>
+ANSWER: A<br>
+
+54.  Massasi m1=7 kg bo’lgan jism massasi m2 = 3 kg bo’lgan tinch turgan jism bilan to’qnashdi.  To’qnashuvdan so’ng ularning kinetik energiyalari Wk=3,5 J bo`ldi. To’qnashuv markaziy va noelastik deb hisoblab, birinchi jismning to’qnashuvgacha bo’lgan kinetik energiyasini aniqlang(J)?<br>
+A. 5 <br>
+B. 10<br>
+C. 12,5 <br>
+D. 7<br>
+ANSWER: A<br>
+
+55.  Balandligi 3,5 m bo’lgan qiya tekislikdan sirpanishsiz dumalayotgan shar markazining chiziqli tezligi 𝓋 aniqlansin (m/s). g=9,8 m/s2<br>
+A. 7 <br>
+B. 5<br>
+C. 3,5 <br>
+D. 2<br>
+ANSWER: A<br>
+
+56. Shar sirtiga o‘tkazilgan urinmaga mos tushuvchi o‘qqa nisbatan inersiya momenti aniqlansin (kg·m2). Sharning radiusi R=0,2 m, uning massasi esa m = 2,5 kg. <br>
+A. 0,14<br>
+B. 0,7<br>
+C. 0,2 <br>
+D. 5<br>
+ANSWER: A<br>
+
+57.  Jismning tezligi yorug’lik tezligiga yaqin bo’lsa, uning zichligi tinchlikdagi zichlikka nisbatan qanday o’zgaradi?<br>
+A. ortadi <br>
+B. o’zgarmaydi<br>
+C. kamayadi<br>
+D. davriy ravishda o’zgarib turadi<br>
+ANSWER: A<br>
+58.  Qanday ob’ekt yorug‘lik tezligi “c”dan katta tezlikda harakatlinishi mumkin? (c-yorug’likning vakuumdagi tezligi)<br>
+A. Hech qanday jism harakatlana olmaydi.<br>
+B. Tezlatgichdagi proton yerga nisbatan.<br>
+C. Harakatlanayotgan yorug‘lik manbaiga nisbatan elektromagnit maydon.<br>
+D. Devordagi yorug‘ dog‘, devorga nisbatan.<br>
+ANSWER: A<br>
+59. Ikkita zarra bir-biriga tomon har biri 5c/8 tezlik bilan harakatlanmoqda ularning nisbiy tezligi qanday? (c-yоrug’likning vakuumdagi tezligi.)<br>
+A. 0,9c<br>
+B. 0,5c<br>
+C. 0.6c<br>
+D. 0.7c<br>
+ANSWER: A<br>
+
+60.  Qanday sanoq tizimida yorug‘likning vakuumdagi tezligi 3·108 m/s ga teng?<br>
+A. Har qanday inertsial sanoq tizimida<br>
+B. Faqat Quyosh bilan bog‘liq sanoq tizimlarida.<br>
+C. Faqat tezlik o‘lchanayotgan joy bilan bog‘liq tizimda<br>
+D. Faqat Yer bilan bog‘liq sanoq tizimlarida.<br>
+ANSWER: A<br>
+61.  Maxsus nisbiylik nazariyasi formulalarini qanday harakatlarni tavsiflashda qo‘llash mumkin?<br>
+A. Yorug‘lik tezligiga yaqin har qanday jismlarning harakatini tavsiflashda.<br>
+B. Yorug‘lik tezligiga yaqin tezliklarda harakatlanuvchi faqat makroskopik zarralarni harakatini tavsiflashda .<br>
+C. Yorug‘lik tezligiga yaqin tezliklarda harakatlanuvchi faqat mikroskopik zarralarni harakatini tavsiflashda .<br>
+D. Yorug‘lik tezligidan ancha kichik tezliklarda harakatlanuvchi jismlarning harakatini tavsiflashda.<br>
+ANSWER: A<br>
+62. Massasi m1=5 kg bo‘lgan bolg‘a bilan temir bo‘lagi temir taglikda pachoqlanmoqda. Temir taglikning ustidagi temir bo‘lagi bilan birgalikdagi  massasi m2=100 kg. Urilish  noelastik. Berilgan sharoitlarda bolg’a urilishining  F.I.K. aniqlansin.<br>
+A. 95 %<br>
+B. 87%<br>
+C. 100%<br>
+D. 65%<br>
+ANSWER: A<br>
+
+63.  Jismning tinchlikdagi energiyasi 9∙1010 J bo‘lsa, bu jismning massasi ... ga teng.<br>
+A. 1mg<br>
+B. 1g<br>
+C. 1kg<br>
+D. 1t<br>
+ANSWER: A<br>
+64.  Yerdagi kuzatuvchi uchun kosmik kemaning chiziqli o‘lchamlari, uning harakat yo’nalishida 4 marta kamaygan bo‘lsa, kemadagi soatlar kuzatuvchining soatiga nisbatan qanday yuradi?<br>
+A. 4 marta sekin<br>
+B. 8 marta sekin<br>
+C. 8 marta tez<br>
+D. 4 marta tez<br>
+ANSWER: A<br>
+65.  Ikkita elementar zarracha bir to’g’ri chiziq bo’ylab, bir-biri tоmоn 0,8 c va 0,9 c tezlik bilan uchmоqda. Ikkinchi zarrachaning birinchi zarrachaga nisbatan tezligini aniqlang. (c-yоrug’likning vakuumdagi tezligi.)<br>
+A. 0,99c<br>
+B. c<br>
+C. 0,88c<br>
+D. 0,66c<br>
+ANSWER: A<br>
+
+
+66.  Agar harakatlanayotgan jismning harakat yo'nalishidagi uzunligi 40 foizga qisqarsa, uning tezligini aniqlang (m/s).<br>
+A. 2,4  108<br>
+B. 4  106<br>
+C. 3,6  107<br>
+D. 6,4  106<br>
+ANSWER: A<br>
+67. Tezligi 0,87c bo’lgan elektronning massasi uning tinchlikdagi massasidan necha marta katta? (c-yоrug’likning vakuumdagi tezligi.)<br>
+A. 2<br>
+B. 2,5<br>
+C. 4<br>
+D. 5<br>
+ANSWER: A<br>
+68.  0,6 c tezlik bilan harakatlanayоtgan kosmik kemada 16 sоat vaqt o’tgan bo’lsa, Yerda necha sоat vaqt o’tgan? (c-yоrug’likning vakuumdagi tezligi.)<br>
+A. 20<br>
+B. 27<br>
+C. 16<br>
+D. 18<br>
+ANSWER: A<br>
+69.  Agar Yerda 70 yil o’tgan bo’lsa, yerga nis¬batan 0,99c tezlik bilan harakatlanayоtgan yulduzlararо uchuvchi kemada necha yil o’tgan bo’ladi? <br>
+A. 10<br>
+B. 15<br>
+C. 20<br>
+D. 7<br>
+ANSWER: A<br>
+70.  Kuzatuvchiganisbatan 2,4108m/stezlikdaharakatlanayоtganjismningharakatyo’nalishidagiuzunliginechafоizgaqisqaradi?<br>
+A. 40<br>
+B. 20<br>
+C. 60<br>
+D. 80<br>
+ANSWER: A<br>
+71.  Elementar zarrachaning massasi qanday tezlikda tinchlikdagisiga nisbatan 40% ga оshadi? c - yоrug’likning vakuumdagi tezligi.<br>
+A. 0.7 c<br>
+B. 0.8 c<br>
+C. 0.6 c<br>
+D. 0.64 c<br>
+ANSWER: A<br>
+72.  90 t massali yuk 10 m balandlikka ko’tarilganda, uning massasi qanchaga o’zgaradi?<br>
+A. 10-10kg ga оrtadi<br>
+B. 10-10kg ga kamayadi<br>
+C.  o’zgarmaydi<br>
+D. 510-10 kg ga kamayadi<br>
+ANSWER: A<br>
+73.  Bikrligi 4,5 kN/m bo’lgan prujina2 mm ga cho’zilganda, uning massasiqanchaga оshadi (kg)?<br>
+A. 110-19<br>
+B. 210-20 <br>
+C. 310-15  <br>
+D. 510-12 <br>
+ANSWER: A<br>
+74. Harakat tezligi 0,6c bo’lgan zarrachaning kinetik energiyasi uning tinchlikdagi energiyasidan necha marta kichik bo’ladi?<br>
+A. 4<br>
+B. 2<br>
+C. 3.6<br>
+D. 3<br>
+ANSWER: A<br>
+75. Massalari 1 kg va 2 kg bo’lgan sharchalar parallel va bir tomonga harakatlanmoqda, ularning tezliklari mos ravishda 4 m/s va 6 m/s ga teng. Shu sharchalarning natijaviy impulsini  (kg∙ m/s) aniqlang. <br>
+A. 16<br>
+B. 10<br>
+C. 8<br>
+D. 6<br>
+ANSWER: A<br>
+76. Massalari 2 kg dan bo’lgan ikkita bir xil sharcha bir-biriga tomon 3 m/s va 7 m/s tezliklar bilan harakatlanmoqda. Sharchalar impulslarining (kg∙m/s) yig’indisini toping. <br>
+A. 8<br>
+B. 20<br>
+C. 14<br>
+D. 28<br>
+ANSWER: A<br>
+77. Massalari 3 kg dan bo’lgan ikkita bir hil sharcha o’zaro perpendikulyar yo’nalishlarda 3 m/s va 4 m/s tezliklar bilan harakatlanmoqda. Sharchalar impulslarining yig’indisini (kg∙ m/s) toping.<br>
+A. 15<br>
+B. 8<br>
+C. 5<br>
+D. 21<br>
+ANSWER: A<br>
+78. Massasi 0.1 kg bo’lgan sharcha 10 m/s tezlik bilan gorizontal tekislikka kelib tushdi. To’qnashuvniabsolyut noelastik  deb hisoblab, sharcha impulsi (kg∙ m/s)o’zgarishining modulini aniqlang.<br>
+A. 1<br>
+B. 10<br>
+C. 15<br>
+D. 20<br>
+ANSWER: A<br>
+79.  Gorizontal tekislik bo’ylab 0,2 m/s tezlik bilan ketayotgan 800 kg massali vagonetkaga 200 kg qum yuklansa, uning tezligi necha sm/s ga o’zgaradi?<br>
+A. 4<br>
+B. 12<br>
+C. 5<br>
+D. 3<br>
+ANSWER: A<br>
+80.  Massasi 1 kg bo’lgan jism 1 m radiusli aylana bo’ylab 2 rad/s burchak tezlik bilan harakatlanmoqda. Jism aylananing yarmini bosib o’tishi natijasida impu’sning o’zgarishini toping(kg∙ m/s).<br>
+A. 4<br>
+B. 3<br>
+C. 2<br>
+D. 0<br>
+ANSWER: A<br>
+81.  Aylana bo’ylab harakatlanayotgan, massasi 2 kg bo’lgan jism 4 m/s tezlikka ega. Aylananing chorak qismini bosib o’tgach uning tezligi 3 m/s bo’lib qoldi. Jism impulsining o’zgarishini(kg∙ m/s)aniqlang.<br>
+A. 10<br>
+B. 8<br>
+C. 6<br>
+D. 12<br>
+ANSWER: A<br>
+82.  To’pdan snaryad 600 m/s tezlik bilan uchib chiqdi. Agar stvol ichidagi porox gazlarining bosim kuchi 2700 kN, uning ichida snaryadning harakatlanish vaqti 0,002 s bo’lsa, snaryadning massasini aniqlang.<br>
+A. 9 kg<br>
+B. 5 kg<br>
+C. 3,5 kg<br>
+D. 7 kg<br>
+ANSWER: A<br>
+83.  Massasi 200 g, tezligi 5 m/s bo’lgan sharcha, shu yo’nalishda 4 m/s tezlik bilan  harakatlanayotgan 300 g massali sharcha bilan absolyut noelastik to’qnashganidan keyin, ularning tezligi necha sm/s bo’ladi? <br> 
+A. 440<br>
+B. 500<br>
+C. 330<br>
+D. 250<br>
+ANSWER: A<br>
+84.  Ikkita jism bir biriga tomon har biri 3 m/s tezlik bilan harakatlanib, to’qnashganidan keyin, birgalikda 1,5 m/s bilan harakatini davom ettirgan bo’lsa. Shu jismlar massalari nisbatini toping.<br>
+A. 3<br>
+B. 5<br>
+C. 2<br>
+D. 7<br>
+ANSWER: A<br>
+85.  Massasi 200 kg bo’lgan qayiq 1 m/s tezlik bilan harakatlanmokda. Shu qayiqdan 50 kg massali bola qayiq yo’nalishiga qarama-qarshi tomonga sakrashi natijasida qayiqning tezligi 3 m/s bo’lib qoldi. Bola qanday tezlik bilan qayiqdan sakraganini aniqlang.<br>
+A. 7 m/s<br>
+B. 3 m/s<br>
+C. 12 m/s<br>
+D. 4 m/s<br>
+ANSWER: A<br>
+86.  Kon’kichi 5 m/s tezlik bilan chanani itarib kelayotgan edi, chanani old tomonga itarib yuborishi natijasida, chanani tezligi 8 m/s ga yetgan bo’lsa, kon’kichining keyingi tezligini(sm/s) aniqlang. Chananing massasi 90 kg, kon’kichining massasi 60 kg.<br>
+A. 50 <br>
+B. 120 <br>
+C. 30 <br>
+D. 24 <br>
+ANSWER: A<br>
+87.  Massasi 50 kg bo’lgan snaryad vertikal o’qqa nisbatan 30° burchak ostida 600 m/s tezlik bilan otildi va borib, qumli platformaga urilib, unga kirib qoldi. To’qnashuv natijasida platformaning olgan tezligini (m/s)aniqlang. Platformaning massasi 950 kg.<br>
+A. 15<br>
+B. 12<br>
+C. 18<br>
+D. 24<br>
+ANSWER: A<br>
+88.  Absolyut elastik to’qnashuvda qaysi kattaliklar saqlanadi?<br>
+A. Impuls va kinetik energiya<br>
+B. Massa va tezlik<br>
+C. Potensial energiya<br>
+D. Faqat impuls<br>
+ANSWER: A<br>
+
+89.  Absolyut noelastik to’qnashuvda qaysi kattaliklar saqlanadi?<br>
+A. Faqat impuls<br>
+B. Impuls va kinetik energiya<br>
+C. Massa va tezlik<br>
+D. Potensial energiya<br>
+ANSWER: A<br>
+90. Jism vertikal yuqoriga v0 =20m/s tezlik bilan otilgan. Qanday h balandlikda uning potensial energiyasi kinetik energiyasiga teng bo’ladi (m)? Havoning qarshiligini hisobga olmang.<br>
+A. 10,2<br>
+B. 11,2<br>
+C. 9,7<br>
+D. 13.6<br>
+ANSWER: A<br>
+91.  m=50 kg massali yukni α=300 li qiya tekislik bo’ylab S=4 m masofaga ko’tarish uchun bajarilishi kerak bo’lgan ishni toping (kJ). Bunda ko’tarish vaqti t=2 s, ishqalanish koeffitsiyenti esa μ=0,06 ga teng bo’lgan. <br>
+A. 1,48<br>
+B. 2,31<br>
+C. 3,98<br>
+D. 2,79<br>
+ANSWER: A<br>
+92.  Massasi 2 kg bo’lgan jism x=5+2t+t^(3  )qonun bo’yicha harakatlanadi, uning 3 s dan keyingi impulsini (kg∙ m/s)  aniqlang.<br>
+A. 58<br>
+B. 87<br>
+C. 116<br>
+D. 29<br>
+ANSWER: A<br>
+93.  Massasi 1 kg bo’lgan jism harakat tenglamasi  x=5+t^2+t^3  qonun bo’yicha harakatlanadi, uning 2 s dan keyingi kinetik energiyasini (J) aniqlang.<br>
+A. 128<br>
+B. 56<br>
+C. 64<br>
+D. 184<br>
+ANSWER: A<br>
+94.  Qanday sistemalarda mexanik energiyaning saqlanish qonuni bajariladi?<br>
+A. Faqat konservativ kuchlar mavjud bo’lgan sistemalarda<br>
+B. Faqat dissipativ kuchlar mavjud bo’lgan sistemalarda<br>
+C. Faqat inersial sistemalarda<br>
+D. Faqat ochiq sistemalarda<br>
+ANSWER: A<br>
+95.  Ikkita kichik m=10 gr massali sharchalar o’zaro ingichka vaznsiz l=20 см uzunlikdagi ip bilan bog’langan. Ushbu tizimning massalar markazidan o’tgan va ip tekisligiga perpendikulyar bo’lgan o’qqa nisbatan inersiya momenti I ni toping (kg∙m^2).<br>
+A. 2∙10^(-4)<br>
+B. 3,1∙10^(-4)<br>
+C. 2,9∙10^(-4)<br>
+D. 5∙10^(-4)<br>
+Answer:A<br>
+96.  Uzunligi l=50 sm va massasi m=360 g bo’lganing ichka bir jinsli sterjenning: 1) uning uchidan; 2) uning uchidan markaz tomonga l/6 masofada joylashgan nuqtadan o’tuvchi o’qlarga nisbatan inersiya momentlari aniqlansin.<br>
+A. 1) J_A=3∙10^(-2) kg∙m^2; 2) J_B=1,75∙10^(-2) kg∙m^2.<br>
+B. 1) J_A=5∙10^(-2) kg∙m^2; 2) J_B=1,85∙10^(-2) kg∙m^2.<br>
+C. 1) J_A=2∙10^(-2) kg∙m^2; 2) J_B=1,65∙10^(-2) kg∙m^2.<br>
+D. 1) J_A=4∙10^(-2) kg∙m^2; 2) J_B=1,55∙10^(-2) kg∙m^2.<br>
+ANSWER: A<br>
+97.  Ventilyator n=600 ayl/min chastota bilan aylanyapti. U o’chirilgandan keyin N=50 marta aylangach tekis sekinlanuvchan harakat qilib to’xtadi. Tormozlovchi kuchning ishi A=31,4 Joulga teng. Aniqlansin: 1) M tormozlovchi kuch momenti; 2) ventilyatorning J inersiya momenti.<br>
+A. 1) M=0,1 N∙m; 2) J=1,59∙10^(-2) kg∙m^2.<br>
+B. 1) M=0,01 N∙m; 2) J=1,89∙10^(-2) kg∙m^2.<br>
+C. 1) M=0,3 N∙m; 2) J=1,79∙10^(-2) kg∙m^2.<br>
+D. 1) M=0,2 N∙m; 2) J=1,69∙10^(-2) kg∙m^2.<br>
+ANSWER: A<br>
+98.  Radiusi R=0,5 m bo’lgan bir jinsli yaxlit diskning chetiga doimiy F=100 N urinma kuch qo’yilgan. Diskning aylanishida unga Мishq=2 N∙m ga teng ishqalanish kuchining momenti ta’sir etadi. Agar uning burchak tezlanishi ε o’zgarmas bo’lib, 16 rad/s2 ga tengligi ma’lum bo’lsa, diskning m massasi aniqlansin.  <br>
+A. 24 kg<br>
+B. 30 kg<br>
+C. 12 kg<br>
+D. 18 kg<br>
+ANSWER: A<br>
+99.  Sharcha qiyaligi α=30о bo’lgan qiya tekislikdan sirpanishsiz dumalab tushmoqda. Agar dumalash natijasida sharchaning massa markazi 30 sm ga pasaygani ma’lum bo’lsa, qiya tekislik bo’yicha sharchaning harakatlanish vaqti aniqlansin. Ishqalanish hisobga olinmasin.<br>
+A. 0,585 s<br>
+B. 0,385 s<br>
+C. 0,685 s<br>
+D. 0,285 s<br>
+ANSWER: A<br>
+100.  Gorizontal stol yuzasida yotgan m1 =0,25 kg massali jism, massasi m2 =0,2 kg bo’lgan jism bilan, ichi bo'sh ingichka devorli silindr shaklidagi blok orqali o’tkazilgan ip bilan rasmda ko’rsatilgandek o’zaro bog’langan. Blokning massasi m=0,15 kg, stol sirtidagi ishqalanish koeffitsienti µ=0,2 ga teng. Podshipniklardagi ishqalanishni hisobga olmay, quyidagilarni aniqlang: 1) bu jismlarning harakat tezlanishi a; 2) iplarning Т1  vaТ2  taranglik kuchlari.<br>
+ 
+A. 1) а = 2,45 m/s2; 2) Т1=1,1 N; Т2=1,47 N. <br>
+B. 1) а = 5,45 m/s2; 2) Т1=1,21 N; Т2=1,37 N. <br>
+C. 1) а = 1,45 m/s2; 2) Т1=1,01 N; Т2=1,57 N. <br>
+D. 1) а = 3,45 m/s2; 2) Т1=1,31 N; Т2=1,67 N. 
+ANSWER: A<br>
+101.  Bir jinsli disk shakliga ega bo’lgan platforma inersiyasi tufayli qo’zg’almas vertikal o’q atrofida aylana oladi. Platformaning chetida, massasi platformaning massasidan 3 marta kichik bo’lgan odam turibdi. Agar odam markazga tomon platforma radiusining yarmiga teng masofaga ko’chsa, platformaning burchak tezligi qanchaga ortishini aniqlang.<br>
+A. ω2/ω1=1,43<br>
+B. ω2/ω1=1,33<br>
+C. ω2/ω1=1,23<br>
+D. ω2/ω1=1,53<br>
+ANSWER: A<br>
+102.  Massasi m=4 kg bo’lgan bir jinsli shar rasmda ko’rsatilgandek doimiy F kuch ta’sirida stol yuzasi bo’ylab ilgarilanma harakat qiladi, burchak  α=30о. Shar va stol orasidagi  ishqalanish koeffitsienti   µ=0,20. F kuch va sharning tezlanishini toping.
+ <br>
+A. F=13,1 N; а=1,2 m/s2.<br>
+B. F=13,1 N;а=1,02 m/s2.<br>
+C. F=14,1 N;а=1,2 m/s2.<br>
+D. F=11,1 N;а=1,02 m/s2.<br>
+ANSWER: A<br>
+103.  Bir jinsli sterjenning, uning markazidan o’tuvchi o’qqa nisbatan inersiya momenti formulasini ko’rsating.<br>
+A. I=1/12 mL^2<br>
+B. I=1/5 mL^2<br>
+C. I=2/5 mL^2<br>
+D. I=1/3 mL^2<br>
+ANSWER: A<br>
+104.  Massasi  m=5,0 kg bo’lgan bir jinsli shar qiyaligi  α=30о bo’lgan qiya tekislik bo’ylab sirpanishsiz dumalab tushmoqda. Harakat boshlanganidan  t=1,6 s vaqt o’tgach sharning kinetik energiyasini toping.<br>
+A. 0,11 kJ<br>
+B. 1,11 kJ<br>
+C. 0,21 kJ<br>
+D. 0,011 kJ<br>
+ANSWER: A<br>
+105.  Shteyner teoremasi ifodasini ko’rsating?<br>
+A. I_J=I_c+md^2<br>
+B. I=∑_(i=1)^n▒〖m_i 〖r_i〗^2 〗<br>
+C. I_J=I_c+md<br>
+D. I=∫_0^∞▒〖r^2 dm〗<br>
+ANSWER: A<br>
+106.  Yupqa uzukning, uning markazidan o’tuvchi o’qqa nisbatan inersiya momenti formulasini ko’rsating.<br>
+A. I=mR^2<br>
+B. I=1/2 mR^2<br>
+C. I=2/5 mR^2<br>
+D. I=2/3 mR^2<br>
+ANSWER: A<br>
+107.  Aylanma harakat dinamikasining tenglamalari uchun quyida keltirilgan ifodalarlardan qaysi biri noto’g’ri  berilgan  (M -kuch momenti,L - impuls momenti, I - inersiya momenti, W-aylanma harakat energiyasi):<br>
+A. W=Iω^2/2<br>
+B. M=I(dω/dt)<br>
+C. dL/dt=M<br>
+D. L=Iω<br>
+ANSWER: A<br>
+108.  Bir jinsli sterjenning, uning chetidan o’tuvchi o’qqa nisbatan inersiya momenti formulasini ko’rsating.<br>
+A. I=1/3 mL^2<br>
+B. I=1/5 mL^2<br>
+C. I=2/5 mL^2<br>
+D. I=1/12 mL^2<br>
+ANSWER: A<br>
+109.  Erkin aylanayotgan gorizontal platformada turgan odam qo’llarini yon tomonga uzatdi. Bu holda: inersiya momenti J, burchak tezlik  ω, impuls momenti L qanday o’zgaradi?<br>
+A. J↑ω↓L=const<br>
+B. J↓ω↓L=↓<br>
+C. J↑ω↑L=↑<br>
+D. J↓ω↑L=const<br>
+ANSWER: A<br>
+110.  Yaxlit diskning, uning markazidan o’tuvchi o’qqa nisbatan inersiya momenti formulasini ko’rsating.<br>
+A. I=1/2 mR^2<br>
+B. I=mR^2<br>
+C. I=2/5 mR^2<br>
+D. I=2/3 mR^2<br>
+ANSWER: A<br>
+111.  Vertikal  o’q atrofida  inersiya bilan aylanayotgan charxpalakning markazida qo’llarida gorizontal holatdagi sterjenni  o’rtasidan ushlagan holda odam o’tiribdi. Agar u sterjenni gorizontal holatdan vertikal  holatga o’tkazsa, u holda aylanish chastotasi…<br>
+A. kamayadi<br>
+B. ortadi<br>
+C. o’zgarmaydi<br>
+D. avval ortadi, keyin kamayadi<br>
+ANSWER: A<br>
+112.  Gorizontal holatda joylashgan m massali ingichka bir jinsli sterjen,uchlaridan ikkita vertikal iplar bilan osilgan. Agar iplardan birini yoqib yuborilsa iplardan ikkinchisining o’sha paytdagi taranglik kuchini toping.<br>
+A. T=mg/4<br>
+B. T=mg/2<br>
+C. T=mg/3<br>
+D. T=mg/6<br>
+ANSWER: A<br>
+113.  Yaxlit sharning, uning markazidan o’tuvchi o’qqa nisbatan inersiya momenti formulasini ko’rsating.<br> 
+A. I=2/5 mR^2<br>
+B. I=1/2 mR^2<br>
+C. I=mR^2<br>
+D. I=2/3 mR^2<br>
+ANSWER: A<br>
+114.  Potensialning oʻlchov birligi nima?<br>
+A. Volt<br>
+B. Vatt<br>
+C. Nyuton <br>
+D. Joul<br>
+ANSWER: A<br>
+115.  q nuqtaviy zaryad hosil qiluvchi potensial nimaga teng?<br>
+A. ϕ(r)=q/(4πξ_0 r)<br>
+B. A_12=q^' (ϕ_1-ϕ_2)<br>
+C. E=-∇ϕ<br>
+D. E_l=-dϕ/dl<br>
+ANSWER: A<br>
+116.  Cheksiz uzun tekislik uchun kuchlanganlik ifodasini koʻrsating?<br>
+A. E=σ/(2ξ_0 )<br>
+B. E=-∇ϕ<br>
+C. E_l=-dϕ/dl<br>
+D. E=σ/ξ_0 <br>
+ANSWER: A<br>
+117.  Cheksiz uzun ikkita parallel tekslik uchun kuchlanganlik ifodasini koʻrsating?<br>
+A. E=σ/ξ_0<br> 
+B. E=σ/(2ξ_0 )<br>
+C. E_l=-dϕ/dl<br>
+D. E=q/(4πξ_0 r^2 )<br>
+ANSWER: A<br>
+118.  Ekvipotensiyal sirt bu-<br>
+A. potensiallari bir xil boʻlgan sirt<br>
+B. kulon kuchlari  bir xil boʻlgan sirt <br>
+C. energiyalari bir xil boʻlgan sirt<br>
+D. zaryadlari bir xil boʻlgan sirt <br>
+ANSWER: A<br>
+119.  Ekvipotensial sirtga nisbatan kuchlanganlik chiziqlari qanday yoʻnalgan?<br>
+A. perpendikulyar <br>
+B. parallel <br>
+C. aylana boʻylab <br>
+D. ular mavjud emas<br>
+ANSWER: A<br>
+120.  Cheksiz o’tkazuvchi tekislikdan a=5 sm masofada Q = 1 nC nuqtaviy  zaryad joylashgan. Tekislikdagi bu zaryadga induksiyalangan zaryad tomonidan ta’sir ko'rsatadigan F kuchini aniqlansin.<br>
+A. 0,9·10-6 N<br>
+B. 0,9·10-9 N<br>
+C. 0,9·10-3 N<br>
+D. 0,09·10-9 N<br>
+ANSWER: A<br>
+121. Diametri d = 5 sm va uzunligi l = 4 m bo’lgan to’g’ri metall sterjenda Q = 500 nC zaryadini uning yuzasiga tekis taqsimlaydi. Uning sirtidan a = 1 sm masofada sterjenning o’rtasiga qarama-qarshi nuqtadagi E kuchlanganlik aniqlansin. <br>
+A. 64,3·103 V/m<br>
+B. 6,43·103 V/m<br>
+C. 0,643·103 V/m<br>
+D.  643·103 V/m<br>
+ANSWER: A<br>
+122. Radiusi R=20 sm bo’lgan sharning markazida Q=10 nC nuqtaviy zaryad joylashgan. S=20 sm2 bo’lgan sferik yuzaning bir qismi orqali o’tuvchi kuchlanganlik  vektorining ФE oqimi aniqlansin.<br>
+A. 4,5 V·m<br>
+B. 0,45 V·m<br>
+C. 45 V·m<br>
+D. 450 V·m<br>
+ANSWER: A<br>
+123.  Maydonning ma’lum bir nuqtasida joylashgan Q=10 nC nuqtaviy zaryad Wp=10 mkJ potensial energiyaga ega. Maydonning ushbu nuqtasidagi φ potentsial topilsin.<br>
+A. 1·103 V<br>
+B. 0,1·103 V<br>
+C. 0,01·103 V<br>
+D. 0,001·103 V<br>
+ANSWER: A<br>
+124. Tok kuchi I (A) qanday bo‘lganda zanjirning qarshiligi 2 Ω bo‘lgan qismidan 3 s da 54 J issiqlik ajraladi?<br>
+A. 3<br>
+B. 6<br>
+C. 9<br>
+D. 18<br>
+ANSWER: A<br>
+125. Sirti bo’ylab bir tekis taqsimlangan katta metall plastinka zaryadining sirt zichligi σ=10 nС/m2. Plastinkadan ozgina masofada Q=100 nC nuqtaviy zaryad joylashgan. Zaryadga ta’sir etuvchi F kuch topilsin (mkN). ɛ0=8,85·10-12  F/m<br>
+A. 56,5<br>
+B. 5,65<br>
+C. 60,5<br>
+D. 62,5<br>
+ANSWER: A<br>
+126. Cheksiz katta (zaryadi tekis taqsimlangan) plastinkaning markazidan ma’lum masofada Q=1 µC nuqtaviy zaryad joylashgan. Plastinka nuqtaviy zaryadga F=60 mN kuch bilan ta’sir etadi. Plastinkaning sirt zaryad zichligini toping (µC/m2). ɛ0=8,85·10-12 F/m<br>
+A. 1,06<br>
+B. 3,78<br>
+C. 4,07<br>
+D. 6,72<br>
+ANSWER: A<br>
+127. Zaryad ekvipotensial sirt bo’ylab ko’chirilsa, uning potensial energiyasi qanday o‘zgaradi?<br>
+A. o‘zgarmaydi<br>
+B. kamayadi<br>
+C. ortadi<br>
+D. zaryad miqdoriga bog‘liq<br>
+ANSWER: A<br>
+128. Agar ikkita turli xil zaryadlangan cheksiz parallel tekisliklar zaryadining sirt zichligi σ=0,4 мкКл/м2, oralaridagi masofa esa d=3 sm bo’lsa, tekisliklar orasida  joylashgan Q=10 nC zaryadni 1-chi nuqtadan 2-chi nuqtaga ko’chirishdagi bajarilgan ishni toping (mJ)? <br>
+A. 13,6<br>
+B. 1,36<br>
+C. 7,8<br>
+D. 78<br>
+ANSWER: A<br>
+129. Bir jinsli elektrostatik maydonda potensial yuqoriga tomon ortib bormoqda. Elektr maydon kuchlanganligi vektori qaysi tomonga yo‘nalgan.<br>
+A. pastga<br>
+B. o‘ngga<br>
+C. yuqoriga<br>
+D. chapga<br>
+ANSWER: A<br>
+130. Agar yassi kondensator plastinkalari orasidagi masofa d=5·10-3 m, plastinkalardagi zaryad miqdori Q=10-7 C va qoplamalariga φ=90 V potensiallar farqi qo‘yilgan bo’lsa, kondensatorning plastinkalari yuzasi S ni aniqlang (m2). ɛ0=8,85·10-12 F/m<br>
+A. 0,62<br>
+B. 1,34<br>
+C. 64,4<br>
+D. 12,7<br>
+ANSWER: A<br>
+131.  Zaryadining sirt zichligi σ=0,3·10-6 C/m2 bo’lgan sharcha φ=800 V potensialgacha zaryadlangan. Sharchaning radiusi R topilsin (sm). ɛ0=8,85·10-12 F/m<br>
+A. 2,36<br>
+B. 1,8<br>
+C. 0,3<br>
+D. 0,5<br>
+ANSWER: A<br>
+132.  Shar φ=10 V potensialgacha zaryadlangan. Diametri d=20 sm bo‘lgan o’tkazuvchan shar zaryadining sirt zichligi topilsin (C/m2). ɛ0=8,85·10-12 F/m<br>
+A. 8,85·10-10<br>
+B. 10·10-10<br>
+C. 2,2·10-10<br>
+D. 5,6·10-10<br>
+ANSWER: A<br>
+133.  Bir jinsli muhitda nuqtaviy zaryadning ekvipotensial sirtlari qanday shaklga ega?<br>
+A. sfera<br>
+B. silindr<br>
+C. konus<br>
+D. tekislik<br>
+ANSWER: A<br>
+134.  Bir xil zaryadlangan o‘tkazgichlar φ1=40 V va φ2=60 V potensiallarga ega. Agar ular ingichka sim bilan bir-biriga ulansa, bu o’tkazgichlarning potensiali φ qanday bo‘ladi (V)?<br>
+A. 48<br>
+B. 100<br>
+C. 50<br>
+D. 150<br>
+ANSWER: A<br>
+135. Agar shar φ=10 kV potensialgacha zaryadlangan, energiyasi esa W=2 kJ ega bo‘lsa, shardagi zaryad miqdorini toping (C).<br>
+A. 0,4<br>
+B. 0,1<br>
+C. 0,5<br>
+D. 1,5<br>
+ANSWER: A<br>
+136. Zaryadlangan yassi kondensator plastinkalari orasidagi masofa ikki marta kamaytirildi. Agar kondensator kuchlanish manbaidan uzilgan bo’lsa, kondensatordagi maydon energiyasi necha marta o’zgaradi?<br>
+A. 2 marta kamayadi<br>
+B. 5 marta ortadi<br>
+C. 4 marta kamayadi<br>
+D. 6 marta ortadi<br>
+ANSWER: A<br>
+137. Uzunligi l=10 m boʻlgan temirdan yasalgan sim U=6 V kuchlanishli manbaga ulangan. Agar temirning solishtirma qarshiligi ρ=9,8·10-8 Ώ·m bo‘lsa, simdagi tok zichligi j topilsin(MA/m2).<br>
+A. 6,1<br>
+B. 610<br>
+C. 6100<br>
+D. 0,61<br>
+Answer:A<br>
+
+138. potensiyalgacha zaryadlangan sharcha  sirt zichligiga ega. Radius r ni toping.<br>
+А. 0.0021 m<br>
+В. 1 m<br>
+D. 0,3 m<br>
+C. 0,057 m<br>
+Answer:A<br>
+
+139.  Kuchlanish manbai klemmalariga uzunligi l=2 m bo‘lgan mis sim ulangan. Simdan o‘tayotgan tok zichligi j=106 A/m2. Klemmalardagi kuchlanish U topilsin(V). ρsq=1,7·10-8 Ώ·m<br>
+A. 34·10-3<br>
+B. 0,34·10-3<br>
+C. 340·10-3<br>
+D. 3,4·10-3<br>
+Answer:A<br>
+
+140. Ясси ҳаво конденсатор пластиналарининг юзаси , улар орасидаги масофа  . Ушбу конденсатор сиғими топилсин.<br>
+A. 5,9 pF<br>
+B. 10 pF<br>
+C. 17 pF<br>
+D. 1 pF<br>
+Answer:A<br>
+
+141. Elektr sig’imi 10pF bo’lgan kondensatorga 1 pC zaryad berilgan. Kondensatorning energiyasini toping(μJ).<br>
+A. 0,05<br>
+B. 0,5<br>
+C. 5<br>
+D. 50 <br>
+Answer:A<br>
+
+142.   sig’imga ega bo’lgan kondensator  potensiyallar farqigacha zaryadlangan.  Ushbu kondensator   energiyasini aniqlang.<br>
+A. 0.1 Дж<br>
+B. 0.01 Дж<br>
+C. 0.001 Дж<br>
+D 0.02 Дж<br>
+Answer:A<br>
+
+143. Radiusi   bo’lgan shar   potensiyalgacha zaryadlangan. Zaryadlangan sharchaning   energiyasini aniqlang.<br>
+A. 0,05<br>
+B. 0,5<br>
+C. 0,005<br>
+D. 0,15<br>
+Answer:A<br>
+144. Yassi kondensator qoplamalari orasiga slyuda (ε=6) kiritilgan. Agar qoplamalar orasidagi elektr maydon kuchlanganligi E=1MV/m ga teng bo‘lsa, kondensator qoplamalari slyudaga qanday bosim bilan ta'sir etadi(Pa)? ɛ0=8,85·10-12 V/m;<br>
+A. 26,55<br>
+B. 2,655<br>
+C. 265<br>
+D. 290<br>
+Answer:A<br>
+
+145.  Havoda (ε1=1) yassi kondensator plastinkalari oralig‘iga U1=300 V potensiallar farqi qo‘yilgan. Kondensator manbadan uzilgach, plastinkalar oralig‘iga ebonit (ε2=2,6) kiritilgan. Plastinkalar orasidagi potensiallar farqi qanchaga teng bo‘ladi (V)?<br>
+A. 115<br>
+B. 135<br>
+C. 230<br>
+D. 235<br>
+Answer:A<br>
+146. Uzunligi  , diametric  , tok kuchi  bo’lgan mis simdagi tushish potensiali u ni aniqlang.<br>
+A. 5,4<br>
+B. 8<br>
+C. 0,54<br>
+D. 15<br>
+Answer:A<br>
+
+147.  E.Y.K  bo’lgan va   ichki qardhiligi bo’lgan element  tashqi qarshiligiga bog’langan (замкнут). Zanjirda tok kuchi  ni, tashqi zanjirdagi tushush potensiali  va element ichidagi  ni toping. ( 1) ; 2)  ; 3)  4)  )<br>
+
+A. 1) 0,11; 2) 0,99; 3) 0,11; 4) 0,9<br>
+B. 1) 0,011; 2) 0,27; 3) 0,011; 4) 2<br>
+C. 1) 2; 2) 0,27; 3) 0,3; 2; 4) 3<br>
+D. 1) 0,11; 2) 0,27; 3) 3; 4) 1<br>
+Answer:A<br>
+
+148. E.Y.K  bo’lgan element   ichki qarshilikka ega. Zanjirdagi tok kuchi   bo’lganda  element ichidagi tushish potensiali  ni aniqlang. Ushbu holda zanjirning tashqi qarshiligi R qanday bo’ladi.  ( 1)  ; 2) R)<br>
+
+A. 1) 0.125; 2) 7,5<br>
+B. 1) 0.06;   2) 0,75<br>
+C. 1) 0,006; 2) 0,75<br>
+D. 1) 0,75;  2) 0,75<br>
+Answer:A<br>
+
+149.E.Y.K  bo’lgan element  ichkiqarshilikkaega.Zanjirdagi tok bo’lganda elementning F.I.K  topilsin.<br>
+A. 25 %<br>
+B. 3 %<br>
+C. 30 %<br>
+D. 0,2 %<br>
+Answer:A<br>
+
+150. Elementning f.i.k  ,  , zanjirdagi tok ga teng. Element ichidagi tushish potensiali   ni va uning qarshiligi  ni aniqlang. ( 1)  ; 2)  )<br>
+
+A.1) 2,7; 2) 0,9<br>
+B. 1) 5; 2) 2<br>
+C. 1) 0,27; 2) 2<br>
+D. 1) 3; 2) 0,9<br>
+Answer:A<br>
+
+151. Ikkita ketma-ket ulangan bir xil e.y.k ga teng , ichki qarshiliklari  va   bo’lgan elementlar   bo’lgan tashqi qarshilikka ulangan. Har bir element qisqichlaridagi potensiyallar farqi   ni toping.<br>
+( 1)  ; 2)  )<br>
+
+A. 1) 0,66; 2) 0 <br>
+B. 1)75; 2) 5<br>
+C. 1) 0,066; 2) 0<br>
+D. 1) 3; 2) 2<br>
+Answer:A<br>
+
+
+152.Yassi kondensatorning plastinalar orasidagi potensiyallar farqi  . Xar bir plastinalar yuzasi  , uning zaryadi  . Plastinalar bir-biridan qanday   masofada turibdi<br>
+
+A. 4,78<br>
+B. 9,2<br>
+C. 0,4<br>
+D. 0,04<br>
+Answer:A<br>
+
+153.  q= 1 µC nuqtaviy zaryad katta bir tekis zaryadlangan plastina yaqinida, o‘rtasining qarshisida turibdi. Agar nuqtaviy zaryadga F=60 mN kuch ta’sir etsa, plastinadagi zaryadning sirt zichligi σ hisoblansin?   <br>
+A. 1,06·10-6<br>
+B. 5·107<br>
+C. 4,08·10-3<br>
+D. 2,09·104<br>
+ANSWER: A<br>
+154.  Maydonning muayyan nuqtasida turgan  q=10 nC nuqtaviy zaryad Wp=10 µJ potensial energiyaga ega. Maydonning shu nuqtasidagi potensial φ topilsin?<br>
+A. 1000<br>
+B. 8000<br>
+C. 5000<br>
+D. 4000<br>
+ANSWER: A<br>
+155.  Ikkita cheksiz parallel plastina σ1= 10 nC/m2 va σ1=-30 nC/m2 sirt zichliklari bilan  tekis zaryadlangan. S= 1 m2 yuzaga to‘g‘ri keluvchi plastinalar orasidagi o‘zaro ta’sir kuchi aniqlansin?<br>
+A. 34·10-6<br>
+B. 4,3·107<br>
+C. 6·10-4<br>
+D. 2,45·10-2<br>
+ANSWER: A<br>
+156.  Yassi kondensator shisha bilan ajratilgan ikkita qoplamadan iborat. Agar kondensator teshilishidan  oldin elektr maydon kuchlanganligi E=30 MV/m bo‘lsa bu paytda qoplamalar shishaga qanday p bosim ko‘rsatadi? <br>
+A. 15930<br>
+B. 19000<br>
+C. 34500<br>
+D. 22500<br>
+ANSWER: A<br>
+157.  Ikkita parallel, cheksiz uzun to‘g‘ri tolalarda τ1 = 0,1 µC/m va τ2= 0,2 µC/m chiziqli zichliklar bilan uzunlik bo‘ylab tekis taqsimlangan zaryad bor. Tolalarning uzunliklari l=1m bo‘lgan bo‘lagiga to‘g‘ri keluvchi o‘zaro ta’sir kuchi F aniqlansin? Tolalar orasidagi masofa r= 10 sm.<br>
+A. 0,23·10-3<br>
+B. 6,5·105<br>
+C. 5·104<br>
+D. 1·103<br>
+ANSWER: A<br>
+158.  Yassi kondensator qoplamalari orasidagi masofa d= 1,33 m, qoplamalarining yuzasi  S=20 sm2. Kondensator qoplamalari orasidagi bo‘shliqda dielektriklarning ikkita qatlami bor: qalinligi d1 =0,7 mm li slyuda va qalinligi d2=0,3 mm li ebonit. Kondensatorning elektr sig‘imi C aniqlansin? ε1=7, ε2=3, ε3=1<br>
+A. 13,3·10-12<br>
+B. 300·10-4<br>
+C. 345·10-6<br>
+D. 456·10-8<br>
+ANSWER: A<br>
+159.  Yassi kondensator qoplamalarida zaryad σ= 0,2 µC/m2 sirt zichligi bilan bir tekis taqsimlangan. Qoplamalar orasidagi masofa d=1 mm ga teng.  Qoplamalar orasidagi masofa 3 mm gacha orttirilganda qoplamalardagi potensiallar farqi qanchaga o‘zgaradi? <br>
+A. 45<br>
+B. 60<br>
+C. 78
+D. 67<br>
+ANSWER: A<br>
+160.  Agar sim U=6V kuchlanish ostida turgan bo‘lsa, uzunligi l=10 m bo‘lgan temir o‘tkazgichdagi tok zichligi j aniqlansin?<br>
+A. 5·106<br>
+B. 4,6·105<br>
+C. 3·10-4<br>
+D. 4,1·10-8<br>
+ANSWER: A<br>
+161.  Mis o‘tkazgichdagi tokning zichligi j= 3 A/mm2. O‘tkazgichdagi elektr maydon kuchlanganligi E topilsin?ƍCu=17·10-9 Ώ·m<br>
+A. 0,051<br>
+B. 6<br>
+C. 3<br>
+D. 0,8<br>
+ANSWER: A<br>
+162.  t=1 min davomidaV=6 sm3 hajmli mis o‘tkazgichdan o‘zgarmas tok o‘tganida Q=216 J issiqlik miqdori ajralib chiqdi. O‘tkazgichdagi elektr maydon kuchlanganligi E hisoblansin?<br>
+A. 2,85∙103<br>
+B. 8<br>
+C. 6,6<br>
+D. 2<br>
+ANSWER: A<br>
+163.  Sig‘imlari C1=1 µF, C2=2µF, C3=3µF bo‘lgan kondensatorlar kuchlanishi U=1,1 kV ga teng bo‘lgan zanjirga parallel ulangan. Kondensatorlardan tuzilgan batareyaning maydon energiyasi topilsin?<br>
+A. 3,3<br>
+B. 7<br>
+C. 9<br>
+D. 15<br>
+ANSWER: A<br>
+164.  Dielektrikdagi (ε=3) o‘rtacha makroskopik maydon kuchlanganligi E ning qanday qiymatida P qutblanganlik 200 µC/m2 ga teng qiymatga yetishadi.<br>
+A. 0,37·107<br>
+B. 4,5·108<br>
+C. 6·106<br>
+D. 3·109<br>
+ANSWER: A<br>
+165.  Elektron yassi kondensator qoplamalari orasidagi bo‘shliqqa qoplamalarga parallel ravishda υ=10 Mm/s tezlik bilan uchib kirdi. Agar qoplamalar orasidagi masofa d=16 mm, potensiallar farqi 30 V va qoplamalar uzunligi l=6 sm bo‘lsa, kondensator ichida harakatlanish vaqtida elektron musbat zaryadlangan qoplamaga qancha yaqinlashadi. (Maydon bir jinsli deb hisoblansin). <br> 
+A. 15·10-3<br>
+B. 4·10-8<br>
+C. 7,5·10-9<br>
+D. 2,6·10-4<br>
+ANSWER: A<br>
+166.  Boshlang‘ich tezligi 100 km/s bolgan proton bir jinsli elektr maydonga (E=300V/sm) tezlik vektori kuchlanganlik chiziqlari yo‘nalishi bilan mos keladigan bo‘lib uchib kirdi. Protonning tezligi ikki marotaba ortishi uchun u maydon chiziqlari yo‘nalishida qanday yo‘lni o‘tishi kerak? <br>
+A. 5·10-3<br>
+B. 3·102<br>
+C. 1·10-5<br>
+D. 4·10-6<br>
+ANSWER: A<br>
+167.  Agar diametri d=20sm bo‘lsa, q=100 nC zaryad berilgan metall shar elektrostatik maydonining energiyasi  W hisoblansin.<br>
+A. 4,5·10-4<br>
+B. 3,7·10-6<br>
+C. 2,6·10-8<br>
+D. 8,5·10-7<br>
+ANSWER: A<br>
+168.  Ikkita q1=1µC va q2=-q1 nuqtaviy zaryadlar orasidagi masofa 10 sm ga teng. Birinchi zaryaddan r1= 6 sm va ikkinchisidan r2= 8 sm masofada bo‘lgan q=0,1 µC nuqtaviy zaryadga ta’sir etuvchi F kuch aniqlansin.<br>
+A. 25·10-3<br>
+B. 500·102<br>
+C. 398·10-4<br>
+D. 676·10-7<br>
+ANSWER: A<br>
+169. Zaryadlangan zarracha vakuumda qandaydir nuqtada 60 V/m kuchlanganlik hosil qiladi. Agar sistemani dielektrik singdiruvchanligi 2 ga teng bo’lgan kerosinga botirilganda uchbu nuqtaga joylashtirilgan 5 nC zaryadga qanday (μN) kuch ta’sir qiladi?  <br>
+A. 0,6<br>
+B. 0,4<br>
+C. 0,9<br>
+D. 0,8<br>
+ANSWER: A<br>
+170. Kuchlanganlik vektori vertikal yuqoriga yo’nalgan bir jinsli elektr maydonda massasi 0,03 μg va zaryadi 3pC bo’lgan chang zarrasi muvozanat holatda turibdi. Maydon kuchlanganligini (V/m) aniqlang. g=10 m/s2.<br>
+A. 100<br>
+B. 200<br>
+C. 400<br>
+D. 300<br>
+ANSWER: A<br>
+171. Jismga 7·10-8 C zaryad berilganda u zaryad mavjud bo’lmagan holatga nisbatan 10 s vaqt davomida Yer sirtiga tushishda 5 cm katta yo’lni bosib o’tdi. Agar maydon kuchlanganligi 100 V/m bo’lsa, jism massasi necha (g) ga teng? <br>
+A. 7<br>
+B. 8<br>
+C. 6<br>
+D. 5<br>
+ANSWER: A<br>
+172. Uncha katta bo’lmagan zaryad bilan 10 sm masofada hosil qilingan zaryad 800 V/m ga teng. Zaryaddan 20 sm masofadagi maydon kuchlanganligini (V/m) toping.<br>
+A. 200<br>
+B. 100<br>
+C. 400<br>
+D. 300<br>
+ANSWER: A<br>
+173. Yassi kondensatorda elektr maydon kuchlanganligi 30 kV/m ga teng. Qoplamalar orasidagi potensiallar farqi 300 V ga teng. Kondensator qoplamalari orasidagi masofa (cm) qanday?<br>
+A. 1<br>
+B. 2<br>
+C. 3<br>
+D. 4<br>
+ANSWER: A<br>
+174. Radiusi 30 sm bo’lgan sfera yuzasi bo’ylab 4 nC zaryad taqsimlangan. Sfera markazidagi potensial necha (V) ga teng? k = 9·109 m/F.  <br>
+A. 120<br>
+B. 150<br>
+C. 160<br>
+D. 140<br>
+ANSWER: A<br>
+175. Potensaillar farqi 500 V bo’lgan nuqtalar orasida 2 nC zaryadni bir nuqtadan ikkinchi nuqtaga ko’chirishda elektrostatik maydon qanday ish (µJ) bajaradi. k = 9·109 m/F. <br> 
+A. 1<br>
+B. 4<br>
+C. 3<br>
+D. 2<br>
+ANSWER: A<br>
+176.  Qanday radiusli sharning elektr sigimi 1F ga teng boladi (m)?<br>
+A. 9·109<br>
+B. 1∙109<br>
+C. 1∙1010<br>
+D. 2∙109<br>
+ANSWER: A<br>
+177.  Ikkita nuqtaviy zaryad o’zaro 8mN kuch bilan ta’sirlashmoqda. Agar zaryadlar orasidagi masofani o’zgartirmasdan ularning zaryadini 2 marta orttirilsa o’zaro ta’sirlashuv kuchi qanday bo’ladi. <br>
+A. 32mN  <br>  
+B. 16mN<br>
+C. 8mN <br> 
+D. 64mN<br>
+ANSWER: A<br>
+178.  Ipak ipga osilgan kichik sharcha 49 nC zaryadga ega. Kuchlanganligi 100 kV/m bo’lgan gorizontal elektr maydonda ipning vertikal holatdan og’ish burchagi tangensi 0.125 teng bo’lgan burchakka og’di. Sharcha massasini (g) toping. g = 10 m/s2.<br>
+A. 4<br>
+B. 8<br>
+C. 9<br>
+D. 18<br>
+ANSWER: A<br>
+179.  Zayradlardan birini 4 marta orttirganda o’zaro ta’silashuv kuchi o’zgarmasdan qolishi uchun ular orasidagi masofani necha marta orttirish kerak?<br>
+A. 2<br>
+B. 4<br>
+C. 8<br>
+D. 12<br>
+ANSWER: A<br>
+180.  Massasi 0.1 g va zaryadi 4 µC bo’lgan zarracha kuchlanganligi 1000 V/m bo’lgan elektr maydon ta’sirida olgan tezlanishi kattaligini (  m/s^2   ) toping. Og’rilik kuchini hisobga olmang.<br>
+A. 40<br>
+B. 4 <br>
+C. 0.4 <br>
+D. 0.04<br>
+ANSWER: A<br>
+181.  Kerosinda (=2) zaryadi 1 µC  bo’lgan nuqtaviy zaryaddan 10 sm masofada joylashgan ikkinchi zayrad bilan 1,8 N kuch bilan ta'sirlashmoqda. Ikkinchi zaryadning qiymatini (µC) nimaga teng? Qulon qonuni koeffisienti    k = 9*109m/F.<br>
+A. 4<br>
+B. 24<br>
+C. 8<br>
+D. 12<br>
+ANSWER: A<br>
+182.  Ikkita nuqtaviy zaryad vakuumda 10 sm masofada bir-biri bilan dielektrikda 5 sm masofadagidek kuch bilan o’zaro ta’sirlashmoqda. Dielektrikning dielektrik singdiruvchanligini aniqlang.<br>
+A. 4  <br>
+B. 2<br>
+C. 8<br>
+D. 12<br>
+ANSWER: A<br>
+183.  Vakuumda ikkita nuqtaviy zaryad 5 sm masofada 120 µN kuch bilan suyuq dielektrikda esa 10 sm masofada 15 µN kuch bilan ta’sirlashmoqda. Dielektrikning dielektrik singdiruvchanligini aniqlang.<br>
+A. 2 <br>
+B. 4<br>
+C. 6<br>
+D. 8<br>
+ANSWER: A<br>
+184. Zaryadi 8 µС bo’lgan zaryadni potensiali 20 V bo’lgan maydonning nuqtasidan potensiali 12 V bo’lgan maydon nuqtasiga ko’chirishda qanday ish bajarilda? Javobda ishning kattaligini µJ larda ko’rsating. <br> 
+A. 64 <br>
+B. 46<br>
+C. 69<br>
+D. 87<br>
+ANSWER: A<br>
+185.  O’lchamalari bir xil bo’lgan ikkita metal sharchalar mos ravishda 7 µC va -3 µC zaryadlarga ega. Sharchalarni bir-biriga tekkazib ularni qandaydir masofaga uzoqlashtirilganda o’zaro ta’sir kuchi 40 N ga teng bo’ldi. Ushbu masofani (sm) aniqlang. Qulon qonuni koeffisienti k = 9*109m/F.<br>
+A. 3 <br> 
+B. 6<br>
+C. 18<br>
+D. 12<br>
+ANSWER: A<br>
+186.  Massalari 80 g bo’lgan ikkita bir xil kichik sharcha bir nuqtaga maxkamlangan uzunligi 30 sm bo’lgan iplargaosilgan. Sharchalar bir-biridan to’g’ri burchagi ostida og’ishi uchun ularga qanday zaryad miqdordagi zaryad(µC) bilan zaryadlash kerak? k = 9*109m/F, g = 10 m/s2.<br>
+A. 4<br>
+B. 2<br>
+C. 8<br>
+D. 12<br>
+ANSWER: A<br>
+187.  Massalari 6 g bo’lgan ikkita bir xil kichik sharcha bir nuqtaga maxkamlangan uzunligi 13 sm bo’lgan iplarga osilgan. Sharchalar bir-biridan 24 sm masofaga o’gishi  uchun ularga qanday zaryad miqdordagi zaryad bilan zaryadlash (µC) kerak? . k = 9.109m/F, g = 10 m/s2. <br>
+A. 0.96 <br>
+B. 2<br>
+C. 8<br>
+D. 12<br>
+ANSWER: A<br>
+188.  Massasi 4.5 g va zaryadi 0.1 µC bo’lgan sharcha zichligi 800 kg/m3 bo’lgan moyga botirilgan. Sharcha materialining zichligi 1500 kg/m3 ga teng. Sharcha muvozanatda bo’lishi uchun sharcha joylashtirilgan elektr maydon kuchlanganligini (kV/m) toping. g = 10 m/s2.<br>
+A. 210<br>
+B. 390<br>
+C. 850<br>
+D. 120<br>
+ANSWER: A<br>
+189.  Vodorod atomining elementar nazariyasida elektron yadro atrofida doiraviy orbita bo’ylab aylanadi, deb qabul qilinadi. Agar orbita radiusi r=53 pm bo’lsa, elektronning tezligini (km/sekund) toping.<br>
+A. 2180 <br>
+B. 2080<br>
+C. 2880<br>
+D. 1240<br>
+ANSWER: A<br>
+190.  Uchta bir xil musbat Q1=Q2=Q3=1 nKl zaryad teng tomonli uchburchakning uchlarida joylashgan. Ular bilan tortishish kuchi bu zaryadlarning o’zaro itarish kuchlarini muvozanatga keltirishi uchun uchburchakning markaziga qanday Q4 (nKl) manfiy zaryad joylashtirish kerak?<br>
+A. 0.53<br>
+B. 0.25<br>
+C. 0.84<br>
+D. 0.126<br>
+ANSWER: A<br>
+191.  Bir jinsli magnit maydoniga  α  burchak ostida, o’zgarmas tezlik bilan uchib kirgan proton kuch chiziqlari yo’nalishiga nisbatan qanday traektoriya bo’yicha  harakatlanadi?<br>
+A. Vintsimon chiziq  bo’ylab<br>
+B. Ellips bo’ylab<br>
+C. Aylana bo’ylab<br>	
+D. To’gri chiziq bo’ylab<br>
+ANSWER: A<br>
+192.  Bir jinsli magnit maydoniga  o’zgarmas tezlik bilan uchib kirgan proton kuch chizqlari yo’nalishiga perpendikulyar ravishda  qanday traektoriya bo’yicha  harakatlanadi?<br>
+A. Aylana bo’ylab<br>	
+B. To’gri chiziq bo’ylab<br>
+C. Ellips bo’ylab<br>
+D. Vintsimon chiziq  bo’ylab<br>
+ANSWER: A<br>
+193.  Bir jinsli magnit maydoniga  o’zgarmas tezlik bilan uchib kirgan proton kuch chizqlari yo’nalishiga parallel  ravishda  qanday traektoriya bo’yicha  harakatlanadi?<br>
+A. To’gri chiziq bo’ylab <br>		
+B. Ellips bo’ylab<br>
+C. Aylana bo’ylab<br>
+D. Vintsimon chiziq  bo’ylab <br>
+ANSWER: A<br>
+194.  Magnit maydonni qaysi xususiyati Gauss teoremasini ifodalaydi ... <br>
+A. Maydon manbasi bo’lgan magnit zaryadlarining yo’qligi <br> 
+B. Superpozisiya prinsipi<br>
+C. Maydonni vujudga kelishiga sababchi - toklar <br>
+D.  Maydonni uyurmali va kuch xarakteriga egaligi <br>
+ANSWER: A<br>
+195.  Qaysi  kattalik  magnit maydonning kuch xarakteristikasi hisoblanadi:<br>
+A. Magnit induksiya vektori<br>
+B. Amper kuchi <br>
+C. Magnit momenti <br>
+D. Lorens kuchi<br>
+ANSWER: A<br>
+196.  Elektromagnit induksiya hodisasi….. ni yaratilishiga sabab bo’ldi<br>
+A. elektr toki generatori<br>
+B. elektromagnit<br>
+C. tranzistor<br>
+D. elektrodvigatel<br>
+ANSWER: A<br>
+197.  Magnit maydon kuch chiziqlari solenoid ichida… bo’ladi<br>
+A.  trubka o’qiga parallel  <br>
+B.  spiralsimon<br>
+C.  trubka o’qiga perpendikulyar<br>
+D.  aylanasimon<br>
+ANSWER: A<br>
+198.  Ellektromagnit induksiya EYuK i … bilan aniqlanadi<br>
+A. magnit oqimining o’zgarish tezligi <br>
+B. magnit oqimi  <br>
+C. magnit maydonning o’zgarish tezligi <br>
+D.  magnit maydoni<br>
+ANSWER: A<br>
+199.  Magnit induksiya vektori uchun Gauss teoremasini  aniqlang: <br>
+A. <br> 
+B. <br> 
+C. <br> 
+D.  <br>
+ANSWER: A<br>
+200.  To’g’ri  tasdiqni  toping.<br>
+A. Tokli yopiq konturni magnit  maydonida ko’chirishda bajarilgan ish  nolga teng..<br>
+B. Tokli yopiq konturni magnit maydonida ko’chirishda bajarilgan ish konturdagi tok kuchining kontur bilan o’ralgan  sirt orqali  magnit  oqimining  o’zgarishiga (yoki uning oqim tutilishiga) ko’paytmasiga teng.<br>
+C. Tokli yopiq konturni magnit  maydonida ko’chirishda bajarilgan ish o’tkazgichga ta’sir etuvchi kuchning,  uning ko’chishiga ko’paytmasiga teng.<br>
+D. Bajarilgan ish magnit doimiysi va toklarning algebraik  yig’indisiga teng.<br>
+ANSWER: A<br>
+201. Gaz molekulalarining tezliklar bo’yicha taqsimoti har qanday gaz uchun gazning …….. ga bog’liq. <br>
+А. massa va temperaturasi<br>
+B. bosim va hajmi<br>
+C. hajmi<br>
+D. bosimi<br>
+Answer: A<br>
+202.  Massasi m=10 g  bo’lgan gaz V1 hajmdan  V2=2V1 hajmgacha izotermik kengaymoqda. Gazning kengayishda bajargan ishi  900 J ga teng. Gaz molekulalarining ehtimolligi eng katta tezligi ϑ_eht ni toping <br>
+А. 510 m/s<br>
+B. 520 m/s<br>
+C. 530 m/s<br>
+D. 500 m/s<br>
+Answer: A<br>
+203. Bosimi р=105 Pa va temperaturasi  t=270C bo‘lgan azot molekulalarinig vaqt birligi ichidagi o‘rtacha to‘qnashishlar soni ‹ z › ni toping. Azot molekulasining effektiv diametri d = 0,3nm. (μ=28·10-3 kg/mol)<br>
+ A. 4,56⋅109 s-1<br>
+ B. 5,23⋅108 s-1<br>
+ C. 3,66⋅109 s-1<br>
+ D. 6,86⋅108 s-1<br>
+Answer: A<br>
+204. Mоlеkulаlarning effеktiv diаmеtri dеb nimаgа аytilаdi?<br>
+A. to‘qnаshаyotgаn mоlеkulаlаr mаrkаzlаri yaqinlаshishi mumkin bo‘lgаn minimаl mаsоfа.<br>
+B. to‘qnаshаyotgаn mоlеkulаlаr mаrkаzlаri оrаsidаgi mаsоfа. <br>
+C. mоlеkulаning o‘rtаchа diаmеtri. <br>
+D. mоlеkulа bilаn sоlishtirilаyotgаn shаr diаmеtri. <br>
+Answer: A<br>
+205. Tаqsimоt funksiyasining mа’nоsi nimа?<br>
+A. tеzliklаr, enеrgiyalаr, impulslаrning bеrilgаn intеrvаlidа mоlеkulаlаrning nisbiy sоnini аniqlаydi <br>
+B. birlik hаjmdаgi mоlеkulаlаrning nisbiy sоnini аniqlаydi <br>
+C. tеzliklаr, enеrgiyalаr, impulslаrning gеоmеtrik sоhаsidаgi fаzаviy nuqtаsidа mоlеkulаni tоpish ehtimоlligi <br> 
+D. tеzliklаr,  enеrgiyalаr, impulslаrning bеrilgаn intеrvаligа egа bo’lgаn mоlеkulаlаr sоnini аniqlаydi  <br> 
+Answer: A<br>
+206. Ikki atomli gaz izobarik kengayishi natijasida A=1kJ  ish bajarildi. Gazga berilgan issiqlik miqdori Q ni toping (kJ). <br>
+А. 3,5<br>
+B. 4,2<br>
+C. 4,5<br>
+D. 2,5<br>
+Answer: A<br>
+207. Agar gaz bosimi р1=0,1MPa dan р2=50kPa gacha kamaygan bo‘lsa,  massasi m=17g bo‘lgan azotning izotermik kengayishida entropiyaning o‘zgarishi ΔS ni aniqlang (μ=28⋅10-3kg/mol).<br>
+А. 3,48 J/К<br>
+B. 4,27 J/К<br>
+C. 5,45 J/К<br>
+D. 2,56 J/К<br>
+Answer: A<br>
+208. 10 g kislorod 100 C harorat va 304 kPa bosimga turibdi. U o’zgarmas bosimda qizdirilgandan so’ng kengayib, 10 l hajmni egallaydi. Gazning 1) kengaygandan oldingi hajmi (l), 2) kengaygandan keyingi harorati (K), 3) kengayishdan oldingi zichligi va 4) kengaygandan keyingi zichligi topilsin (kg/m3). Kislorodning molekulyar massasi 32 g/mol.<br>
+А. 2,4; 1170; 4,14; 1<br>
+B. 2,4; 1170; 1; 4,14<br>
+C. 2,4; 2370; 4,14; 1<br>
+D. 2,4; 2370; 1; 4,14<br>
+ANSWER: A<br>
+209. V1=3 l sig’imli A idisha P1=200 kPa bosimda gaz bor. V2=4 l sig’imli B idishda P2=1 atm bosimda xuddi shuncha gaz bor. Ikkala idishda ham haroratlar bir xil. Ikkala idish naycha bilan tutashtirilsa, gaz bosimi qancha bo’ladi (Ра)?<br>
+А. 1,4105 <br>
+B. 10105 <br>
+C. 2,4105 <br>
+D. 2,8105 <br>
+ANSWER: A<br>
+210.  2∙10-3 m3 hajmli idish 6 g karbonat angidrit (CO2) va 5 g azot (1)-oksidi (N2O) bilan to’ldirildan. 1270 C haroratda idishdagi umumiy bosim qanday (Ра)? Karbonat angidrit molekulyar massasi 44 g/mol, azot oksidi molekulyar massasi 44 g/molga teng.<br>
+А. 4,15105 <br>
+B. 4,85105 <br>
+C. 8,3105 <br>
+D. 9,7105 <br>
+ANSWER: A<br>
+211. Idishda 10 g karbonat angidrid gazidan va 15 g azotdan iborat aralashma bor. Bu aralashmaaning 170 C haroratda va 1,5·105 Pa bosimda zichligi topilsin (kg/m3). Karbonat angidrit molekulyar massasi 44 g/mol, azotning molekulyar massasi 28 g/molga teng.<br>
+А. 1,98 <br>
+B. 2,5 <br>
+C. 4 <br>
+D. 0,98 <br>
+ANSWER: A<br>
+212. Idishda 10-7 mol kislorod va 10-6 g azot bor. Aralashmaning harorati 100o Cga teng. Bunda idishdagi bosim 133 mPa ga teng. 1) idishning hajmi (l), 2) kislorod va azotning  portsial bosimi (mPa), 3) idishning har 1 sm3 hajmidagi molekulyar soni topilsin (m-3). Kislorodning molekulyar massasi 32 g/mol, azotning molekulyar massasi 28 g/molga teng.<br>
+А. 3,2; 98; 35; 2.61019 <br>
+B. 2,3; 35; 98; 2.61019 <br>
+C. 2,3; 98; 35; 2.61019 <br>
+D. 3,2; 35; 98; 2.61019 <br>
+ANSWER: A<br>
+213. P=8·104 Pa bosimda zichligi ρ=4 kg/m3 bo’lgan 1 kg 2 atomli gaz bor. Bu sharoitda gaz molekulalari issiqlik harakatining energiyasi topilsin (kJ) .<br>
+А. 50 <br>
+B. 150 <br>
+C. 25 <br>
+D. 75 <br>
+ANSWER: A<br>
+214. P=5,3 kPa bosimda va t=270 C haroratda V=10 sm3 hajmni egallagan 2 atomli gaz molekulalarining soni qancha (m-3)? Bu molekulalarning issiqlik harakati energiyasi qancha (J)?<br>
+А. 1,31019; 0,133 <br>
+B. 1,31019; 0,266 <br>
+C. 2,31019; 0,133 <br>
+D. 2,31019; 0,266 <br>
+ANSWER: A<br>
+215. 12 g kislorodni o’zgarmas bosimda 500 C ga isitish uchun qancha issiqlik miqdori sarflash kerak (J). Kislorodning molekulyar massasi 32 g/mol.<br>
+А. 545 <br>
+B. 1090 <br>
+C. 454 <br>
+D. 245 <br>
+ANSWER: A<br>
+216. Qanday haroratda (K) azot molekulalarning o’rtacha kvadratik tezligi ularning ehtimolligi eng katta tezligidan 50 m/sek ga ortiq b’ladi. Azotning molekulyar massasi 28 g/mol.<br>
+А. 83 <br>
+B. 38 <br>
+C. 166 <br>
+D. 76<br> 
+ANSWER: A<br>
+217. Harorati 27 0C bo’lgan 6,5 g vodorod (=2 g/mol) P=const bosimda tashqaridan berilayotgan issiqlik hisobiga ikki marta kengaygan. 1) gazning kegayish ishi 2) gazning ichki energiyasining o’zgarish 3) gazga berilgan issiqlik miqdori topilsin (kJ). <br>
+А. 8,1; 20,2; 28,3 <br>
+B. 8,1; 28,3; 20,2<br>
+C. 16,2; 20,2; 28,3 <br>
+D. 16,2; 28,3; 20,2<br>
+ANSWER: A<br>
+218. Yopiq idishda 20 g azot (=28 g/mol) va 32 g kislorod (=32 g/mol) bor. Bu gaz aralashmasini 270 C ga sovutilganda uning ichki energiyasining o’zgarishi topilsin (J). <br>
+А. 1000 <br>
+B. 1100<br>
+C. 900<br>
+D. 500<br>
+ANSWER: A<br>
+219. Ko’p atomli 1 kilomol gaz erkin kengaya olish sharoitda 1000 C ga isitilgan. 1) gazga berilgan issiqlik miqdori (MJ) 2) gaz ichki energiyasining o’zgarishi (MJ) 3) kengayishda bajarilgan ish topilsin (kJ). <br>
+А. 3,32; 2,49; 831 <br>
+B. 2,49; 3,32; 831 <br>
+C. 3,32; 831; 2,49<br>
+D. 3,32; 2,49; 831 <br>
+ANSWER: A<br>
+220. 10,5 g azot -230 C haroratda izotermik P1=250 kPa bosimdan P2=1 kPa bosimgacha kengayadi. Gazning kengayishda bajargan ishi topilsin (J). Azotning molekulyar massasi 28 g/molga teng.<br>
+А. 714<br>
+B. 7140 <br>
+C. 71.4<br>
+D. 7.14<br>
+ANSWER: A<br>
+221.Gaz molekulalarining o’rtacha kvadratik tezligini √(2  )   marta hajmini esa 2 marta kamaytirsak, bosimi qanday o’zgaradi? <br>
+A. o’zgarmaydi<br>
+B. 8 marta kamayadi<br>
+C. 4 marta ortadi<br>
+D. 4 marta kamayadi<br>
+ANSWER: A<br>
+222. Molekularining issiqlik xarakati ortacha knetik energiyasi ...... <br>
+1) xaroratga bog’liq<br>
+2) xaroratga bog’liq emas<br>
+3) molekulaninmg massasiga bog’liq <br>
+4) molekulaninmg massasiga bog’liq emas<br>
+5) moddaning agrigat holatiga bog’liq<br>
+6) moddaning agrigat holatiga bog’liq emas<br>
+
+A. 1, 3 и 5<br>
+B. 1, 4 и 6<br>
+C. 2, 3 и 5<br>
+D. 2, 3 и 6<br>
+ANSWER: A<br>
+223.300 К xaroratda vodorod molekulalarining o’rtacha kvadratik tezligi qanday xaroratda (К) geliy atomi molekulalari o’rtacha kvadratik tezligiga teng bo’ladi?<br>
+A. 600<br>
+B. 400<br>
+C. 50<br>
+D. 600<br>
+ANSWER: A<br>
+224. Xarorati  270С bo’lgan yopiq idishdagi gazni 6270С gacha qizdirilsa, ideal gazning bosimi neha marta o’zgaradi?<br>
+A. 3<br>
+B. 1.18<br>
+C. 2<br>
+D. 2.21<br>
+ANSWER: A<br>
+225. Xarorati Т(Е1) bo’lgan geliy (М=4 g/mol) va xarorati 2,5Т (Е2) bo’lgan neon (М=20 g/mol) atomlarinig o’rtacha kinetik energiyalarini taqqoslang<br>
+A. E_2=2.5E_1<br>
+B. E_1=2.5E_2<br>
+C. E_1=E_2<br>
+D. E_2=5E_1<br>
+ANSWER: A
+
+
+
+</body>
 </html>
